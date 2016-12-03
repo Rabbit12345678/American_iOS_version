@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kp1-Lf-RHe" customClass="AlphabetSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="295"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obU-4A-ogJ">
+                    <rect key="frame" x="0.0" y="0.0" width="191" height="295"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xRe-Y4-iUh">
+                    <rect key="frame" x="8" y="0.0" width="175" height="295"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="4fF-fK-Qjw">
+                        <size key="itemSize" width="40" height="40"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="kp1-Lf-RHe" id="04M-s1-tzh"/>
+                        <outlet property="delegate" destination="kp1-Lf-RHe" id="0iK-bX-hex"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="obU-4A-ogJ" firstAttribute="leading" secondItem="kp1-Lf-RHe" secondAttribute="leading" id="2rF-KM-VAe"/>
+                <constraint firstItem="xRe-Y4-iUh" firstAttribute="leading" secondItem="kp1-Lf-RHe" secondAttribute="leadingMargin" id="BrF-oh-96b"/>
+                <constraint firstAttribute="bottom" secondItem="obU-4A-ogJ" secondAttribute="bottom" id="CXy-2o-VWh"/>
+                <constraint firstItem="obU-4A-ogJ" firstAttribute="top" secondItem="kp1-Lf-RHe" secondAttribute="top" id="GWP-he-xMz"/>
+                <constraint firstAttribute="trailing" secondItem="obU-4A-ogJ" secondAttribute="trailing" id="KUn-tO-U2U"/>
+                <constraint firstItem="xRe-Y4-iUh" firstAttribute="bottom" secondItem="obU-4A-ogJ" secondAttribute="bottom" id="VAm-B1-9Fv"/>
+                <constraint firstItem="xRe-Y4-iUh" firstAttribute="centerX" secondItem="obU-4A-ogJ" secondAttribute="centerX" id="dAT-ak-PXF"/>
+                <constraint firstItem="obU-4A-ogJ" firstAttribute="top" secondItem="xRe-Y4-iUh" secondAttribute="top" id="dGY-g7-sBM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cv" destination="xRe-Y4-iUh" id="yW1-bt-Cte"/>
+            </connections>
+            <point key="canvasLocation" x="325.5" y="277.5"/>
+        </view>
+    </objects>
+</document>

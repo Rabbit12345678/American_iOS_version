@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarEventsCell" id="KGk-i7-Jjw" customClass="BarEventsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigate-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fW2-zx-fN0">
+                        <rect key="frame" x="292" y="36" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="AIY-IG-aof"/>
+                            <constraint firstAttribute="height" constant="20" id="HQW-bG-I43"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBH-p9-Q8F">
+                        <rect key="frame" x="0.0" y="91" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rcc-DS-8kl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxn-Sp-OMv">
+                        <rect key="frame" x="91" y="8" width="193" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="193" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="mOW-Mr-IR8" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="193" height="21"/>
+                                <string key="text">ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda</string>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="193" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="1Yq-tw-eFf" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="27" width="193" height="21"/>
+                                <string key="text">ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda</string>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-09-15 99:99:99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="2ma-lS-Eh9" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="49" width="193" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kvV-3T-Kzh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2ma-lS-Eh9" firstAttribute="leading" secondItem="Wxn-Sp-OMv" secondAttribute="leading" id="2g4-1F-6OM"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1Yq-tw-eFf" secondAttribute="bottom" constant="27" id="Dcb-l8-n32"/>
+                            <constraint firstItem="2ma-lS-Eh9" firstAttribute="leading" secondItem="1Yq-tw-eFf" secondAttribute="leading" id="E9v-qW-SFk"/>
+                            <constraint firstItem="1Yq-tw-eFf" firstAttribute="top" secondItem="mOW-Mr-IR8" secondAttribute="bottom" constant="6" id="Fl1-4G-15Z"/>
+                            <constraint firstItem="mOW-Mr-IR8" firstAttribute="trailing" secondItem="1Yq-tw-eFf" secondAttribute="trailing" id="Hr9-Xx-hPl"/>
+                            <constraint firstItem="2ma-lS-Eh9" firstAttribute="top" secondItem="1Yq-tw-eFf" secondAttribute="bottom" constant="1" id="P44-Jz-aMM"/>
+                            <constraint firstItem="2ma-lS-Eh9" firstAttribute="trailing" secondItem="1Yq-tw-eFf" secondAttribute="trailing" id="g1s-ph-U6h"/>
+                            <constraint firstAttribute="trailing" secondItem="1Yq-tw-eFf" secondAttribute="trailing" id="mls-81-ZI3"/>
+                            <constraint firstItem="mOW-Mr-IR8" firstAttribute="top" secondItem="Wxn-Sp-OMv" secondAttribute="top" id="tZR-Rc-wJF"/>
+                            <constraint firstItem="mOW-Mr-IR8" firstAttribute="leading" secondItem="1Yq-tw-eFf" secondAttribute="leading" id="vyG-9e-fdD"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mOW-Mr-IR8" secondAttribute="bottom" constant="54" id="w1L-ld-ZwG"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="UY0-d3-nmD">
+                        <rect key="frame" x="8" y="8" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="WKW-iW-TEl"/>
+                            <constraint firstAttribute="width" constant="75" id="o6z-9n-GVJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fW2-zx-fN0" secondAttribute="trailing" constant="8" id="2XY-sI-cse"/>
+                    <constraint firstItem="fW2-zx-fN0" firstAttribute="leading" secondItem="Wxn-Sp-OMv" secondAttribute="trailing" constant="8" symbolic="YES" id="3xp-V7-Sw9"/>
+                    <constraint firstItem="fW2-zx-fN0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FUs-99-YXj"/>
+                    <constraint firstAttribute="bottom" secondItem="eBH-p9-Q8F" secondAttribute="bottom" constant="1" id="MYK-SS-EXZ"/>
+                    <constraint firstItem="UY0-d3-nmD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="QCn-kK-co2"/>
+                    <constraint firstAttribute="trailing" secondItem="eBH-p9-Q8F" secondAttribute="trailing" id="Wih-ne-J3P"/>
+                    <constraint firstItem="Wxn-Sp-OMv" firstAttribute="leading" secondItem="UY0-d3-nmD" secondAttribute="trailing" constant="8" symbolic="YES" id="oc1-Ut-jD6"/>
+                    <constraint firstItem="eBH-p9-Q8F" firstAttribute="top" secondItem="Wxn-Sp-OMv" secondAttribute="bottom" constant="8" symbolic="YES" id="pTQ-aZ-5s8"/>
+                    <constraint firstItem="UY0-d3-nmD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="tum-6P-Bcp"/>
+                    <constraint firstItem="eBH-p9-Q8F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vL0-me-fh2"/>
+                    <constraint firstItem="Wxn-Sp-OMv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="zJi-VV-Pbc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgBarEvent" destination="UY0-d3-nmD" id="k9O-7f-uZF"/>
+                <outlet property="lblEventDateTime" destination="2ma-lS-Eh9" id="cQ4-3x-Uaf"/>
+                <outlet property="lblEventDesc" destination="1Yq-tw-eFf" id="PkD-Fr-UHC"/>
+                <outlet property="lblEventTitle" destination="mOW-Mr-IR8" id="8t0-ZS-YMj"/>
+            </connections>
+            <point key="canvasLocation" x="166" y="372"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="navigate-arrow.png" width="20" height="20"/>
+        <image name="no_bar.png" width="97" height="97"/>
+    </resources>
+</document>

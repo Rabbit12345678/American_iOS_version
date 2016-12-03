@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DirectoryCommentCell" rowHeight="150" id="5Zw-Eb-CpF" customClass="DirectoryCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Zw-Eb-CpF" id="SyK-F2-deq">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sv2-OZ-rId">
+                        <rect key="frame" x="8" y="8" width="96" height="96"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="BVR-a2-rXr"/>
+                            <constraint firstAttribute="height" constant="96" id="mJR-Ir-1wG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="312" translatesAutoresizingMaskIntoConstraints="NO" id="OlS-mz-3Si" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="112" y="33" width="200" height="21"/>
+                        <animations/>
+                        <string key="text">Lorem  ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda EOL TITLE</string>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="312" translatesAutoresizingMaskIntoConstraints="NO" id="Y0K-Vz-dbe" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="112" y="58" width="200" height="21"/>
+                        <animations/>
+                        <string key="text">Lorem  ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda EOL TITLE</string>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="312" translatesAutoresizingMaskIntoConstraints="NO" id="9h4-Vc-7Fi" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="112" y="83" width="200" height="21"/>
+                        <animations/>
+                        <string key="text">Lorem  ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda EOL TITLE</string>
+                        <fontDescription key="fontDescription" name="Verdana-Italic" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="312" translatesAutoresizingMaskIntoConstraints="NO" id="1Bj-7n-1ej" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="112" y="8" width="167" height="21"/>
+                        <animations/>
+                        <string key="text">Lorem  ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda EOL TITLE</string>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" red="0.74117647060000003" green="0.49803921569999998" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0H-Gp-gd6" customClass="ADBRadioButton">
+                        <rect key="frame" x="112" y="108" width="93" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="B2f-Yq-s5Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <state key="normal" title=" 10 Like" image="full_star.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zER-sp-qya" customClass="ADBRadioButton">
+                        <rect key="frame" x="213" y="108" width="93" height="31"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="n5D-uv-P4s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <state key="normal" title="Reply">
+                            <color key="titleColor" red="0.73333333333333328" green="0.48627450980392156" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h05-mB-eo6">
+                        <rect key="frame" x="0.0" y="144" width="320" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6zC-hr-5CB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M6-nv-8bl">
+                        <rect key="frame" x="283" y="4" width="29" height="29"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="oJM-Sj-DmA"/>
+                            <constraint firstAttribute="height" constant="29" id="z01-rb-nRB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                        <state key="normal" title="X"/>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="2M6-nv-8bl" firstAttribute="leading" secondItem="1Bj-7n-1ej" secondAttribute="trailing" constant="4" id="4YK-nc-qZH"/>
+                    <constraint firstItem="Sv2-OZ-rId" firstAttribute="top" secondItem="SyK-F2-deq" secondAttribute="top" constant="8" id="4md-Ct-6uy"/>
+                    <constraint firstItem="H0H-Gp-gd6" firstAttribute="leading" secondItem="9h4-Vc-7Fi" secondAttribute="leading" id="5fu-Vm-zYP"/>
+                    <constraint firstItem="H0H-Gp-gd6" firstAttribute="centerY" secondItem="zER-sp-qya" secondAttribute="centerY" id="9Rk-Ri-VRo"/>
+                    <constraint firstItem="Y0K-Vz-dbe" firstAttribute="leading" secondItem="9h4-Vc-7Fi" secondAttribute="leading" id="A1S-9n-6jg"/>
+                    <constraint firstAttribute="trailing" secondItem="9h4-Vc-7Fi" secondAttribute="trailing" constant="8" id="A6a-AZ-xRd"/>
+                    <constraint firstItem="H0H-Gp-gd6" firstAttribute="top" secondItem="9h4-Vc-7Fi" secondAttribute="bottom" constant="4" id="BaP-E9-5M4"/>
+                    <constraint firstItem="2M6-nv-8bl" firstAttribute="top" secondItem="SyK-F2-deq" secondAttribute="top" constant="4" id="CdI-zp-vVm"/>
+                    <constraint firstAttribute="trailing" secondItem="Y0K-Vz-dbe" secondAttribute="trailing" constant="8" id="ELD-rG-zF3"/>
+                    <constraint firstAttribute="trailing" secondItem="OlS-mz-3Si" secondAttribute="trailing" constant="8" id="Jt1-L8-Sh5"/>
+                    <constraint firstItem="OlS-mz-3Si" firstAttribute="top" secondItem="1Bj-7n-1ej" secondAttribute="bottom" constant="4" id="MhC-u2-dMd"/>
+                    <constraint firstItem="2M6-nv-8bl" firstAttribute="trailing" secondItem="OlS-mz-3Si" secondAttribute="trailing" id="Ml7-wQ-uUH"/>
+                    <constraint firstItem="H0H-Gp-gd6" firstAttribute="top" secondItem="zER-sp-qya" secondAttribute="top" id="T9L-bY-ZSR"/>
+                    <constraint firstItem="zER-sp-qya" firstAttribute="leading" secondItem="H0H-Gp-gd6" secondAttribute="trailing" constant="8" symbolic="YES" id="Tfe-yp-leP"/>
+                    <constraint firstAttribute="bottom" secondItem="H0H-Gp-gd6" secondAttribute="bottom" constant="8" id="UGT-IV-mfX"/>
+                    <constraint firstItem="Y0K-Vz-dbe" firstAttribute="leading" secondItem="OlS-mz-3Si" secondAttribute="leading" id="UQH-aR-ThB"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Sv2-OZ-rId" secondAttribute="bottom" constant="42" id="bIV-qO-XPN"/>
+                    <constraint firstItem="h05-mB-eo6" firstAttribute="leading" secondItem="SyK-F2-deq" secondAttribute="leading" id="c25-lu-XVz"/>
+                    <constraint firstItem="1Bj-7n-1ej" firstAttribute="leading" secondItem="Sv2-OZ-rId" secondAttribute="trailing" constant="8" symbolic="YES" id="cIl-Jb-iM0"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y0K-Vz-dbe" secondAttribute="bottom" constant="67" id="dwQ-s9-c1i"/>
+                    <constraint firstItem="OlS-mz-3Si" firstAttribute="leading" secondItem="1Bj-7n-1ej" secondAttribute="leading" id="eKm-mK-x5X"/>
+                    <constraint firstAttribute="trailing" secondItem="h05-mB-eo6" secondAttribute="trailing" id="ev2-TI-zyS"/>
+                    <constraint firstItem="Sv2-OZ-rId" firstAttribute="leading" secondItem="SyK-F2-deq" secondAttribute="leading" constant="8" id="fdp-Cu-Bmf"/>
+                    <constraint firstItem="1Bj-7n-1ej" firstAttribute="top" secondItem="SyK-F2-deq" secondAttribute="top" constant="8" id="hOJ-6Z-r20"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1Bj-7n-1ej" secondAttribute="bottom" constant="117" id="ngc-Q7-h4l"/>
+                    <constraint firstItem="9h4-Vc-7Fi" firstAttribute="top" secondItem="Y0K-Vz-dbe" secondAttribute="bottom" constant="4" id="oju-J1-5s1"/>
+                    <constraint firstItem="h05-mB-eo6" firstAttribute="top" secondItem="zER-sp-qya" secondAttribute="bottom" constant="5" id="tw6-fb-MCV"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9h4-Vc-7Fi" secondAttribute="bottom" constant="42" id="tzk-DD-KyU"/>
+                    <constraint firstItem="Y0K-Vz-dbe" firstAttribute="top" secondItem="OlS-mz-3Si" secondAttribute="bottom" constant="4" id="uEF-x7-9vy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OlS-mz-3Si" secondAttribute="bottom" constant="92" id="xqc-gg-nLJ"/>
+                    <constraint firstItem="zER-sp-qya" firstAttribute="centerY" secondItem="H0H-Gp-gd6" secondAttribute="centerY" id="y66-Oc-nAQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnDelete" destination="2M6-nv-8bl" id="Y7a-LS-ktR"/>
+                <outlet property="btnLike" destination="H0H-Gp-gd6" id="quI-lQ-tSE"/>
+                <outlet property="btnReply" destination="zER-sp-qya" id="4Hd-at-HPw"/>
+                <outlet property="imgUser" destination="Sv2-OZ-rId" id="DH2-qw-vIq"/>
+                <outlet property="lblDesc" destination="Y0K-Vz-dbe" id="AjU-dx-LUw"/>
+                <outlet property="lblTimeAgo" destination="9h4-Vc-7Fi" id="J50-9S-gCB"/>
+                <outlet property="lblTitle" destination="OlS-mz-3Si" id="nyh-TN-efL"/>
+                <outlet property="lblUserName" destination="1Bj-7n-1ej" id="JAl-ph-KVf"/>
+            </connections>
+            <point key="canvasLocation" x="337" y="330.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="full_star.png" width="20" height="20"/>
+        <image name="no_bar.png" width="97" height="97"/>
+    </resources>
+</document>

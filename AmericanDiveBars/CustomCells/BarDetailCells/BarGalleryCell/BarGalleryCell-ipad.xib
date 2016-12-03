@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pxx-h9-dUI" customClass="BarGalleryCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="512"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pxx-h9-dUI" id="XfB-1i-Kov">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="511"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8iq-O4-oap">
+                        <rect key="frame" x="184" y="8" width="400" height="400"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="400" id="Eha-0O-dw7"/>
+                            <constraint firstAttribute="height" constant="400" id="aqc-Mn-DLB"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NCL-6p-Ty2" appends="YES" id="XvE-Kn-IwY"/>
+                        </connections>
+                    </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTh-qM-51z">
+                        <rect key="frame" x="184" y="378" width="400" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="quo-tB-UL9"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Sn0-vn-kVW" appends="YES" id="LNt-bp-D67"/>
+                        </connections>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Continental Club Photoes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-va-PaL">
+                        <rect key="frame" x="184" y="378" width="400" height="30"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="k1c-Tb-Iuh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gBN-cG-bFV" appends="YES" id="aS7-41-d5I"/>
+                        </connections>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-op-aDt">
+                        <rect key="frame" x="184" y="416" width="400" height="87"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="400" id="fZb-m0-DhA"/>
+                            <constraint firstAttribute="height" constant="87" id="gNo-AL-CU7"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ps5-Op-xFr">
+                            <size key="itemSize" width="87" height="87"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="pxx-h9-dUI" id="FK2-T8-2Sv"/>
+                            <outlet property="delegate" destination="pxx-h9-dUI" id="YbP-hH-muw"/>
+                        </connections>
+                    </collectionView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Px9-oy-AXg">
+                        <rect key="frame" x="164" y="449" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="yag-Ap-UUJ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="4fp-cZ-Y6G">
+                        <rect key="frame" x="584" y="449" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="sfw-m6-zG2"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This bar has not yet added any information regarding Bar Gallery." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-ld-cbm">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="511"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="8iq-O4-oap" firstAttribute="bottom" secondItem="xkm-va-PaL" secondAttribute="bottom" id="1XC-1C-4d2"/>
+                    <constraint firstAttribute="centerX" secondItem="xkm-va-PaL" secondAttribute="centerX" id="1s0-5c-yqY"/>
+                    <constraint firstItem="8iq-O4-oap" firstAttribute="bottom" secondItem="RTh-qM-51z" secondAttribute="bottom" id="4Jw-vq-KZH"/>
+                    <constraint firstItem="LbB-ld-cbm" firstAttribute="top" secondItem="XfB-1i-Kov" secondAttribute="top" id="4xt-79-AXc"/>
+                    <constraint firstItem="LbB-ld-cbm" firstAttribute="leading" secondItem="XfB-1i-Kov" secondAttribute="leading" id="5C3-mD-oE1"/>
+                    <constraint firstItem="8iq-O4-oap" firstAttribute="trailing" secondItem="RTh-qM-51z" secondAttribute="trailing" id="6Op-Jn-QL2"/>
+                    <constraint firstItem="lQY-op-aDt" firstAttribute="top" secondItem="8iq-O4-oap" secondAttribute="bottom" constant="8" id="GBd-px-gSf"/>
+                    <constraint firstItem="Px9-oy-AXg" firstAttribute="centerY" secondItem="lQY-op-aDt" secondAttribute="centerY" id="UtV-S4-eQT"/>
+                    <constraint firstAttribute="centerX" secondItem="lQY-op-aDt" secondAttribute="centerX" id="adm-ox-HE4"/>
+                    <constraint firstAttribute="centerX" secondItem="8iq-O4-oap" secondAttribute="centerX" id="cmY-eY-V7x"/>
+                    <constraint firstAttribute="trailing" secondItem="LbB-ld-cbm" secondAttribute="trailing" id="cuT-3T-pxe"/>
+                    <constraint firstAttribute="centerX" secondItem="RTh-qM-51z" secondAttribute="centerX" id="cxW-8a-I5a"/>
+                    <constraint firstItem="8iq-O4-oap" firstAttribute="leading" secondItem="xkm-va-PaL" secondAttribute="leading" id="dek-OD-Vp3"/>
+                    <constraint firstItem="8iq-O4-oap" firstAttribute="top" secondItem="XfB-1i-Kov" secondAttribute="top" constant="8" id="iRX-TU-CYw"/>
+                    <constraint firstItem="8iq-O4-oap" firstAttribute="leading" secondItem="RTh-qM-51z" secondAttribute="leading" id="ia5-nq-9Vp"/>
+                    <constraint firstItem="lQY-op-aDt" firstAttribute="leading" secondItem="Px9-oy-AXg" secondAttribute="trailing" id="lxY-mS-GaV"/>
+                    <constraint firstItem="4fp-cZ-Y6G" firstAttribute="top" secondItem="Px9-oy-AXg" secondAttribute="top" id="r80-sJ-cD6"/>
+                    <constraint firstItem="8iq-O4-oap" firstAttribute="trailing" secondItem="xkm-va-PaL" secondAttribute="trailing" id="udO-Xe-0Dv"/>
+                    <constraint firstItem="4fp-cZ-Y6G" firstAttribute="leading" secondItem="lQY-op-aDt" secondAttribute="trailing" id="vWd-vf-Khh"/>
+                    <constraint firstAttribute="bottom" secondItem="LbB-ld-cbm" secondAttribute="bottom" id="z9K-FJ-wIS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="cv" destination="lQY-op-aDt" id="FwI-w8-c0a"/>
+                <outlet property="imgBarLarge" destination="8iq-O4-oap" id="kLY-Qd-T9I"/>
+                <outlet property="lblBarTitle" destination="xkm-va-PaL" id="oLt-pj-3cw"/>
+                <outlet property="lblNoData" destination="LbB-ld-cbm" id="NUj-fu-aoU"/>
+                <outlet property="leftArrow" destination="Px9-oy-AXg" id="bj8-Gf-AjL"/>
+                <outlet property="rightArrow" destination="4fp-cZ-Y6G" id="CZO-fC-cmW"/>
+                <outlet property="viewShadow" destination="RTh-qM-51z" id="VQq-Ot-Pa4"/>
+            </connections>
+            <point key="canvasLocation" x="529" y="753"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="NCL-6p-Ty2">
+            <connections>
+                <action selector="bigImageTapped:" destination="pxx-h9-dUI" id="UsK-6K-WSn"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Sn0-vn-kVW">
+            <connections>
+                <action selector="bigImageTapped:" destination="pxx-h9-dUI" id="Yh2-pi-uO2"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="gBN-cG-bFV">
+            <connections>
+                <action selector="bigImageTapped:" destination="pxx-h9-dUI" id="or9-Aj-mjy"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="left-arrow.png" width="20" height="20"/>
+        <image name="right-arrow.png" width="20" height="20"/>
+    </resources>
+</document>

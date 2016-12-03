@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeersServedCell" id="w8T-aC-QVs" customClass="BeersServedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w8T-aC-QVs" id="j3a-iC-E13">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigate-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRD-IM-nnY">
+                        <rect key="frame" x="292" y="36" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="e2E-kx-Sfh"/>
+                            <constraint firstAttribute="height" constant="20" id="fjb-V9-l9D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXE-Oy-jGz">
+                        <rect key="frame" x="0.0" y="91" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nve-e9-fFG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tb5-Mw-2Hd">
+                        <rect key="frame" x="8" y="8" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="UrW-dg-xhA"/>
+                            <constraint firstAttribute="height" constant="75" id="asu-F0-XzF"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZa-cA-6mb">
+                        <rect key="frame" x="91" y="8" width="193" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="193" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="aTg-mo-PAZ" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="193" height="21"/>
+                                <string key="text">ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda</string>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="193" placeholderIntrinsicHeight="21" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="zML-4c-Jhz" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="27" width="193" height="21"/>
+                                <string key="text">ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda</string>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zML-4c-Jhz" firstAttribute="leading" secondItem="RZa-cA-6mb" secondAttribute="leading" id="1sH-Ya-wu9"/>
+                            <constraint firstItem="aTg-mo-PAZ" firstAttribute="trailing" secondItem="zML-4c-Jhz" secondAttribute="trailing" id="FGt-Vk-3Lg"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zML-4c-Jhz" secondAttribute="bottom" constant="1" id="SWR-5M-jBt"/>
+                            <constraint firstItem="aTg-mo-PAZ" firstAttribute="leading" secondItem="zML-4c-Jhz" secondAttribute="leading" id="Stu-5J-EPM"/>
+                            <constraint firstItem="aTg-mo-PAZ" firstAttribute="top" secondItem="RZa-cA-6mb" secondAttribute="top" id="dNJ-pi-qrZ"/>
+                            <constraint firstAttribute="trailing" secondItem="zML-4c-Jhz" secondAttribute="trailing" id="dSR-9I-ycP"/>
+                            <constraint firstItem="zML-4c-Jhz" firstAttribute="top" secondItem="aTg-mo-PAZ" secondAttribute="bottom" constant="6" id="ez1-Vf-0A2"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aTg-mo-PAZ" secondAttribute="bottom" constant="28" id="kTN-dh-ldp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="oXE-Oy-jGz" secondAttribute="trailing" id="9Fk-Le-Ofl"/>
+                    <constraint firstItem="oXE-Oy-jGz" firstAttribute="leading" secondItem="j3a-iC-E13" secondAttribute="leading" id="Ax5-hc-gAI"/>
+                    <constraint firstItem="Tb5-Mw-2Hd" firstAttribute="top" secondItem="j3a-iC-E13" secondAttribute="top" constant="8" id="Gch-je-O1d"/>
+                    <constraint firstItem="RZa-cA-6mb" firstAttribute="leading" secondItem="Tb5-Mw-2Hd" secondAttribute="trailing" constant="8" symbolic="YES" id="HGj-iM-PT6"/>
+                    <constraint firstItem="WRD-IM-nnY" firstAttribute="centerY" secondItem="j3a-iC-E13" secondAttribute="centerY" id="OmD-rY-r14"/>
+                    <constraint firstItem="RZa-cA-6mb" firstAttribute="top" secondItem="j3a-iC-E13" secondAttribute="top" constant="8" id="PKB-aQ-898"/>
+                    <constraint firstItem="WRD-IM-nnY" firstAttribute="leading" secondItem="RZa-cA-6mb" secondAttribute="trailing" constant="8" symbolic="YES" id="RbS-Ia-FD7"/>
+                    <constraint firstItem="Tb5-Mw-2Hd" firstAttribute="leading" secondItem="j3a-iC-E13" secondAttribute="leading" constant="8" id="cUp-6H-gsC"/>
+                    <constraint firstItem="oXE-Oy-jGz" firstAttribute="top" secondItem="RZa-cA-6mb" secondAttribute="bottom" constant="34" id="hEg-V0-Qhl"/>
+                    <constraint firstAttribute="trailing" secondItem="WRD-IM-nnY" secondAttribute="trailing" constant="8" id="j9V-oh-LBw"/>
+                    <constraint firstAttribute="bottom" secondItem="oXE-Oy-jGz" secondAttribute="bottom" constant="1" id="wgf-5Y-iEZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgBeerServed" destination="Tb5-Mw-2Hd" id="Aig-Qh-mpA"/>
+                <outlet property="lblBeerServedDesc" destination="zML-4c-Jhz" id="Xfr-IB-cgP"/>
+                <outlet property="lblBeerServedTitle" destination="aTg-mo-PAZ" id="qlm-wd-bcc"/>
+            </connections>
+            <point key="canvasLocation" x="170" y="502"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="navigate-arrow.png" width="20" height="20"/>
+        <image name="no_bar.png" width="97" height="97"/>
+    </resources>
+</document>

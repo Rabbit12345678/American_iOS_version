@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuTableViewCell" rowHeight="100" id="F5s-wL-X9r" customClass="SideMenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F5s-wL-X9r" id="1bX-x3-qkb">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" placeholderIntrinsicWidth="180" placeholderIntrinsicHeight="21" text="My Favorite Beers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="VTx-i4-eyi">
+                        <rect key="frame" x="0.0" y="54" width="150" height="41"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUs-9R-bGq">
+                        <rect key="frame" x="0.0" y="97" width="150" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.39977384869999999" green="0.36641652959999998" blue="0.27256373360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52w-Ki-q6w">
+                        <rect key="frame" x="50" y="2" width="50" height="50"/>
+                        <animations/>
+                    </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kT5-xI-8FQ">
+                        <rect key="frame" x="8" y="2" width="134" height="98"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QUn-Of-sej" appends="YES" id="sMa-kx-7X6"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.29803921570000003" green="0.25490196079999999" blue="0.16078431369999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="0.29803921570000003" green="0.25490196079999999" blue="0.16078431369999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="imgMenu" destination="52w-Ki-q6w" id="2h5-Iq-TMR"/>
+                <outlet property="lblMenuName" destination="VTx-i4-eyi" id="KEc-oR-tOE"/>
+                <outlet property="viewTap" destination="kT5-xI-8FQ" id="dMg-Kd-zbd"/>
+            </connections>
+            <point key="canvasLocation" x="797" y="375"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="QUn-Of-sej">
+            <connections>
+                <action selector="viewTapGesture:" destination="F5s-wL-X9r" id="QWi-Bd-32V"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

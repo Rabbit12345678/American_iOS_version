@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShowMoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show More" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmM-TW-p4D" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="8" y="0.0" width="304" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NQ-C5-RkZ">
+                        <rect key="frame" x="225" y="20" width="87" height="1"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="87" id="wTU-lf-4jo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="2NQ-C5-RkZ" firstAttribute="trailing" secondItem="zmM-TW-p4D" secondAttribute="trailing" id="3HK-KM-zt9"/>
+                    <constraint firstItem="zmM-TW-p4D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="JEQ-xw-wXV"/>
+                    <constraint firstItem="zmM-TW-p4D" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TKE-mC-Wug"/>
+                    <constraint firstAttribute="trailing" secondItem="zmM-TW-p4D" secondAttribute="trailing" constant="8" id="XQ7-e8-OXF"/>
+                    <constraint firstItem="2NQ-C5-RkZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="idC-tq-Faa"/>
+                    <constraint firstAttribute="bottom" secondItem="zmM-TW-p4D" secondAttribute="bottom" constant="4" id="jhE-lY-OlN"/>
+                    <constraint firstItem="2NQ-C5-RkZ" firstAttribute="bottom" secondItem="zmM-TW-p4D" secondAttribute="bottom" id="jhM-2v-1i7"/>
+                    <constraint firstItem="zmM-TW-p4D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xXn-Us-9nJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblMore" destination="zmM-TW-p4D" id="tac-Af-FVJ"/>
+                <outlet property="lblUnderline" destination="2NQ-C5-RkZ" id="hP5-tU-LZc"/>
+            </connections>
+            <point key="canvasLocation" x="399" y="148"/>
+        </tableViewCell>
+    </objects>
+</document>

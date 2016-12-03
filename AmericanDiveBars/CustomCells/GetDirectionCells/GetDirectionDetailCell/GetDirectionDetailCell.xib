@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GetDirectionDetailCell" id="KGk-i7-Jjw" customClass="GetDirectionDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="21" text="hasdkjfh kjasdh fkjahsdfkkads fasjkdhfkjhasjkdfhjkhaskjdfhkjsahdkfjhkjasdf DETAIL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="312" translatesAutoresizingMaskIntoConstraints="NO" id="ZRs-EF-ROy" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="21" text="sdahfkjhasjkdh fkasdhfkhsdkjfh ksdf khdsf k KM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="312" translatesAutoresizingMaskIntoConstraints="NO" id="sXA-oH-Zbs" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="8" y="37" width="304" height="21"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZRs-EF-ROy" secondAttribute="bottom" constant="37" id="Gvg-TA-nJn"/>
+                    <constraint firstItem="sXA-oH-Zbs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NjZ-lh-Hfd"/>
+                    <constraint firstAttribute="trailing" secondItem="ZRs-EF-ROy" secondAttribute="trailing" constant="8" id="Ofg-5b-oSj"/>
+                    <constraint firstItem="ZRs-EF-ROy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Rlu-hu-nr5"/>
+                    <constraint firstAttribute="trailing" secondItem="sXA-oH-Zbs" secondAttribute="trailing" constant="8" id="Xua-XG-B6c"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sXA-oH-Zbs" secondAttribute="bottom" constant="8" id="dNz-qc-vrQ"/>
+                    <constraint firstItem="sXA-oH-Zbs" firstAttribute="top" secondItem="ZRs-EF-ROy" secondAttribute="bottom" constant="8" symbolic="YES" id="kxB-kE-C4U"/>
+                    <constraint firstItem="ZRs-EF-ROy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="l1H-FT-6g9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblDirection" destination="ZRs-EF-ROy" id="a3I-gW-ITl"/>
+                <outlet property="lblDistance" destination="sXA-oH-Zbs" id="3sT-d5-eUg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

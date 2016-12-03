@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="520" id="Cfg-iC-nCw" customClass="GalleryCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="512"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cfg-iC-nCw" id="ABV-tN-6a5">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="511"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PUM-du-tSJ">
+                        <rect key="frame" x="184" y="8" width="400" height="400"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="400" id="DeV-HO-16e"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="w5i-aj-8zG" appends="YES" id="Fty-Vc-0U4"/>
+                        </connections>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-3p-AiY">
+                        <rect key="frame" x="184" y="416" width="400" height="87"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="87" id="wI6-Ke-QSd"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="icy-65-Hag">
+                            <size key="itemSize" width="87" height="87"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="Cfg-iC-nCw" id="9WK-MW-K71"/>
+                            <outlet property="delegate" destination="Cfg-iC-nCw" id="NKd-LP-jXA"/>
+                        </connections>
+                    </collectionView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="kss-JY-gj5">
+                        <rect key="frame" x="592" y="450" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="k4b-Lx-Jrj"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="9T6-XT-wRD">
+                        <rect key="frame" x="156" y="450" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="mLk-2X-hGE"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdN-n9-whY">
+                        <rect key="frame" x="184" y="378" width="400" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Continental Club Photoes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2i-bj-FJX">
+                        <rect key="frame" x="188" y="378" width="366" height="30"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="MpY-Pz-r5u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ASJ-Cv-ZAv" appends="YES" id="fl5-sY-n0f"/>
+                        </connections>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpO-gl-HXS">
+                        <rect key="frame" x="554" y="378" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="L4A-IU-qju"/>
+                        </constraints>
+                        <state key="normal" image="share-icon.png"/>
+                        <connections>
+                            <action selector="btnShare_Clicked:" destination="Cfg-iC-nCw" eventType="touchUpInside" id="J9q-GN-hQp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="MXU-3p-AiY" firstAttribute="top" secondItem="F2i-bj-FJX" secondAttribute="bottom" constant="8" symbolic="YES" id="05d-6m-q1P"/>
+                    <constraint firstItem="mdN-n9-whY" firstAttribute="top" secondItem="VpO-gl-HXS" secondAttribute="top" id="0Mh-rf-mVB"/>
+                    <constraint firstItem="PUM-du-tSJ" firstAttribute="top" secondItem="ABV-tN-6a5" secondAttribute="topMargin" id="4aA-9V-1dB"/>
+                    <constraint firstItem="MXU-3p-AiY" firstAttribute="bottom" secondItem="ABV-tN-6a5" secondAttribute="bottomMargin" id="5EL-xg-pyd"/>
+                    <constraint firstItem="MXU-3p-AiY" firstAttribute="trailing" secondItem="mdN-n9-whY" secondAttribute="trailing" id="85p-na-ch0"/>
+                    <constraint firstItem="PUM-du-tSJ" firstAttribute="centerX" secondItem="ABV-tN-6a5" secondAttribute="centerX" id="JtB-8W-asp"/>
+                    <constraint firstItem="F2i-bj-FJX" firstAttribute="leading" secondItem="mdN-n9-whY" secondAttribute="leading" constant="4" id="U5f-LR-Yx1"/>
+                    <constraint firstItem="F2i-bj-FJX" firstAttribute="top" secondItem="mdN-n9-whY" secondAttribute="top" id="VYb-cj-XML"/>
+                    <constraint firstItem="kss-JY-gj5" firstAttribute="top" secondItem="9T6-XT-wRD" secondAttribute="top" id="X4n-Ye-Gl7"/>
+                    <constraint firstItem="MXU-3p-AiY" firstAttribute="top" secondItem="PUM-du-tSJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Xfg-jO-Jf0"/>
+                    <constraint firstItem="mdN-n9-whY" firstAttribute="leading" secondItem="MXU-3p-AiY" secondAttribute="leading" id="Zi2-Sf-vLU"/>
+                    <constraint firstItem="9T6-XT-wRD" firstAttribute="centerY" secondItem="MXU-3p-AiY" secondAttribute="centerY" id="c95-pE-BIg"/>
+                    <constraint firstItem="VpO-gl-HXS" firstAttribute="leading" secondItem="F2i-bj-FJX" secondAttribute="trailing" id="cqz-3s-qRC"/>
+                    <constraint firstItem="mdN-n9-whY" firstAttribute="trailing" secondItem="PUM-du-tSJ" secondAttribute="trailing" id="fOc-F2-eur"/>
+                    <constraint firstItem="MXU-3p-AiY" firstAttribute="top" secondItem="VpO-gl-HXS" secondAttribute="bottom" constant="8" symbolic="YES" id="iRx-YL-48W"/>
+                    <constraint firstItem="9T6-XT-wRD" firstAttribute="centerX" secondItem="ABV-tN-6a5" secondAttribute="centerX" constant="-218" id="lAO-h8-uM5"/>
+                    <constraint firstItem="kss-JY-gj5" firstAttribute="centerX" secondItem="ABV-tN-6a5" secondAttribute="centerX" constant="218" id="nKy-wr-O8q"/>
+                    <constraint firstItem="MXU-3p-AiY" firstAttribute="top" secondItem="mdN-n9-whY" secondAttribute="bottom" constant="8" symbolic="YES" id="ot7-mI-Xf2"/>
+                    <constraint firstItem="mdN-n9-whY" firstAttribute="trailing" secondItem="VpO-gl-HXS" secondAttribute="trailing" id="pDI-Pg-xOj"/>
+                    <constraint firstItem="PUM-du-tSJ" firstAttribute="leading" secondItem="mdN-n9-whY" secondAttribute="leading" id="tov-ay-fdE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnShare" destination="VpO-gl-HXS" id="q3q-Kb-kou"/>
+                <outlet property="cv" destination="MXU-3p-AiY" id="fu3-c5-Syy"/>
+                <outlet property="imgBarLarge" destination="PUM-du-tSJ" id="xUW-yK-yh2"/>
+                <outlet property="lblBarTitle" destination="F2i-bj-FJX" id="pSP-OE-C3j"/>
+                <outlet property="leftArrow" destination="9T6-XT-wRD" id="mwb-6o-eDh"/>
+                <outlet property="rightArrow" destination="kss-JY-gj5" id="Dlz-rx-PwM"/>
+                <outlet property="viewShadow" destination="mdN-n9-whY" id="gbg-zd-zpb"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="919"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="ASJ-Cv-ZAv">
+            <connections>
+                <action selector="bigImageTapped:" destination="Cfg-iC-nCw" id="czw-JP-7Z5"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="w5i-aj-8zG">
+            <connections>
+                <action selector="bigImageTapped:" destination="Cfg-iC-nCw" id="oaX-jB-UhV"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="left-arrow.png" width="20" height="20"/>
+        <image name="right-arrow.png" width="20" height="20"/>
+        <image name="share-icon.png" width="45" height="45"/>
+    </resources>
+</document>

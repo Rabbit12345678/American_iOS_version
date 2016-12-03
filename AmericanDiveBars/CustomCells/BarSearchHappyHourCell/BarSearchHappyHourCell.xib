@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="lHz-a6-7by" customClass="BarSearchHappyHourCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lHz-a6-7by" id="Wvt-HS-o5z">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address,City,State,Zip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7dJ-f4-nCA">
+                        <rect key="frame" x="8" y="69" width="304" height="60"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="1rj-xH-z80"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXA-bj-YIM">
+                        <rect key="frame" x="8" y="68" width="304" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VyI-ni-nIU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-KQ-7Dg">
+                        <rect key="frame" x="8" y="129" width="304" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hxn-x1-Oot"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Day" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-H1-Pj9">
+                        <rect key="frame" x="8" y="130" width="304" height="60"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="NK7-xa-p68"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="754-fl-xSI"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of Bar" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEd-Yo-klj">
+                        <rect key="frame" x="8" y="8" width="304" height="60"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="304" id="MkY-EG-kdO"/>
+                            <constraint firstAttribute="height" constant="60" id="kWt-fL-rEz"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="EFI-fK-ulw"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzq-YK-snc">
+                        <rect key="frame" x="8" y="190" width="304" height="60"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                        <state key="normal" title="SEARCH">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="6ah-KQ-7Dg" firstAttribute="leading" secondItem="fg5-H1-Pj9" secondAttribute="leading" id="3vf-hT-RkF"/>
+                    <constraint firstItem="7dJ-f4-nCA" firstAttribute="leading" secondItem="6ah-KQ-7Dg" secondAttribute="leading" id="CSR-Mx-ewa"/>
+                    <constraint firstItem="fg5-H1-Pj9" firstAttribute="trailing" secondItem="Xzq-YK-snc" secondAttribute="trailing" id="F3h-tB-dWR"/>
+                    <constraint firstItem="Xzq-YK-snc" firstAttribute="leading" secondItem="fg5-H1-Pj9" secondAttribute="leading" id="Kxp-JS-knr"/>
+                    <constraint firstItem="gEd-Yo-klj" firstAttribute="centerX" secondItem="Wvt-HS-o5z" secondAttribute="centerX" id="N29-k0-FsJ"/>
+                    <constraint firstItem="uXA-bj-YIM" firstAttribute="leading" secondItem="gEd-Yo-klj" secondAttribute="leading" id="NDl-zN-Yql"/>
+                    <constraint firstItem="6ah-KQ-7Dg" firstAttribute="centerY" secondItem="Wvt-HS-o5z" secondAttribute="centerY" id="Qw2-eZ-GOL"/>
+                    <constraint firstItem="6ah-KQ-7Dg" firstAttribute="top" secondItem="7dJ-f4-nCA" secondAttribute="bottom" id="X0X-B1-xHm"/>
+                    <constraint firstItem="Xzq-YK-snc" firstAttribute="bottom" secondItem="Wvt-HS-o5z" secondAttribute="bottomMargin" id="X3l-T7-B2G"/>
+                    <constraint firstItem="7dJ-f4-nCA" firstAttribute="top" secondItem="uXA-bj-YIM" secondAttribute="bottom" id="aSC-Wc-sx1"/>
+                    <constraint firstItem="6ah-KQ-7Dg" firstAttribute="trailing" secondItem="7dJ-f4-nCA" secondAttribute="trailing" id="fkJ-WP-b7j"/>
+                    <constraint firstItem="Xzq-YK-snc" firstAttribute="top" secondItem="fg5-H1-Pj9" secondAttribute="bottom" id="iay-dD-acz"/>
+                    <constraint firstItem="gEd-Yo-klj" firstAttribute="top" secondItem="Wvt-HS-o5z" secondAttribute="topMargin" id="ldG-5r-n9Z"/>
+                    <constraint firstItem="7dJ-f4-nCA" firstAttribute="trailing" secondItem="uXA-bj-YIM" secondAttribute="trailing" id="oAY-nI-qmm"/>
+                    <constraint firstItem="6ah-KQ-7Dg" firstAttribute="trailing" secondItem="fg5-H1-Pj9" secondAttribute="trailing" id="oth-26-CA2"/>
+                    <constraint firstItem="fg5-H1-Pj9" firstAttribute="top" secondItem="6ah-KQ-7Dg" secondAttribute="bottom" id="pPw-Pe-DJt"/>
+                    <constraint firstItem="7dJ-f4-nCA" firstAttribute="leading" secondItem="uXA-bj-YIM" secondAttribute="leading" id="pgE-33-nzP"/>
+                    <constraint firstItem="gEd-Yo-klj" firstAttribute="trailing" secondItem="uXA-bj-YIM" secondAttribute="trailing" id="rHd-GH-FUA"/>
+                    <constraint firstItem="uXA-bj-YIM" firstAttribute="top" secondItem="gEd-Yo-klj" secondAttribute="bottom" id="rPi-z8-wHV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnStartSearch" destination="Xzq-YK-snc" id="ZZW-bn-CC6"/>
+                <outlet property="txtAddress" destination="7dJ-f4-nCA" id="K8l-fl-gY6"/>
+                <outlet property="txtDay" destination="fg5-H1-Pj9" id="pGJ-I5-ZQd"/>
+                <outlet property="txtTitle" destination="gEd-Yo-klj" id="wAl-gz-0sP"/>
+            </connections>
+            <point key="canvasLocation" x="422" y="432.5"/>
+        </tableViewCell>
+    </objects>
+</document>

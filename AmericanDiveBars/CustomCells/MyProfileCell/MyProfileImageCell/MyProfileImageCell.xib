@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyProfileImageCell" rowHeight="127" id="GDO-dy-7Oq" customClass="MyProfileImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GDO-dy-7Oq" id="DdT-8Y-31D">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-image-placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="mZE-7i-4CV">
+                        <rect key="frame" x="110" y="13" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="8sT-mg-9FJ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE1-2K-Y2L">
+                        <rect key="frame" x="185" y="88" width="25" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="NmW-PH-1XN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="-2" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="+" backgroundImage="gradient.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-Fn-FHR">
+                        <rect key="frame" x="277" y="83" width="35" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="CqQ-vI-Jyq"/>
+                            <constraint firstAttribute="height" constant="35" id="k5K-oZ-bPK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" backgroundImage="edit-profile.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled">
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI3-1e-uVj">
+                        <rect key="frame" x="0.0" y="125" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="mZE-7i-4CV" firstAttribute="centerX" secondItem="pI3-1e-uVj" secondAttribute="centerX" id="8p0-JQ-k8A"/>
+                    <constraint firstItem="pI3-1e-uVj" firstAttribute="top" secondItem="aqa-Fn-FHR" secondAttribute="bottom" constant="7" id="CUv-A5-e19"/>
+                    <constraint firstItem="aqa-Fn-FHR" firstAttribute="bottom" secondItem="DdT-8Y-31D" secondAttribute="bottomMargin" id="KgA-ay-TeQ"/>
+                    <constraint firstAttribute="bottom" secondItem="pI3-1e-uVj" secondAttribute="bottom" id="LA4-aH-uht"/>
+                    <constraint firstItem="aqa-Fn-FHR" firstAttribute="trailing" secondItem="DdT-8Y-31D" secondAttribute="trailingMargin" id="PJ6-7h-FHT"/>
+                    <constraint firstAttribute="trailing" secondItem="pI3-1e-uVj" secondAttribute="trailing" id="Xip-6v-UM3"/>
+                    <constraint firstItem="mZE-7i-4CV" firstAttribute="bottom" secondItem="uE1-2K-Y2L" secondAttribute="bottom" id="aG7-sX-bNq"/>
+                    <constraint firstItem="mZE-7i-4CV" firstAttribute="centerY" secondItem="DdT-8Y-31D" secondAttribute="centerY" id="bWG-FA-4ch"/>
+                    <constraint firstItem="uE1-2K-Y2L" firstAttribute="centerY" secondItem="aqa-Fn-FHR" secondAttribute="centerY" id="ggM-DY-b4d"/>
+                    <constraint firstItem="pI3-1e-uVj" firstAttribute="top" secondItem="mZE-7i-4CV" secondAttribute="bottom" constant="12" id="jD9-fZ-mXQ"/>
+                    <constraint firstItem="pI3-1e-uVj" firstAttribute="leading" secondItem="DdT-8Y-31D" secondAttribute="leading" id="mtA-5N-HyK"/>
+                    <constraint firstItem="mZE-7i-4CV" firstAttribute="trailing" secondItem="uE1-2K-Y2L" secondAttribute="trailing" id="xCI-X5-LwV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnEditProfile" destination="aqa-Fn-FHR" id="P8Q-2k-mxg"/>
+                <outlet property="btnSelectImage" destination="uE1-2K-Y2L" id="1tv-pF-dKp"/>
+                <outlet property="imgUser" destination="mZE-7i-4CV" id="idY-2l-aKu"/>
+            </connections>
+            <point key="canvasLocation" x="505" y="166.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit-profile.png" width="35" height="35"/>
+        <image name="gradient.png" width="160" height="60"/>
+        <image name="profile-image-placeholder.png" width="100" height="100"/>
+    </resources>
+</document>

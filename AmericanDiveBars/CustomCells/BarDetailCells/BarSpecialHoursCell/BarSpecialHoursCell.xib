@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarSpecialHoursCell" rowHeight="70" id="oo7-vL-3AK" customClass="BarSpecialHoursCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oo7-vL-3AK" id="BkG-kN-phs">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlQ-LZ-0sZ">
+                        <rect key="frame" x="8" y="97" width="304" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gyU-GQ-tpu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WednesDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLO-qe-pMg">
+                        <rect key="frame" x="8" y="8" width="100" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb1-YM-hjw">
+                        <rect key="frame" x="8" y="39" width="137" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="137" id="I5S-I5-7kQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99 AM - 99:99 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ2-Pw-ZaK">
+                        <rect key="frame" x="127" y="8" width="185" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQM-On-F5s">
+                        <rect key="frame" x="146" y="39" width="166" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxL-fX-xrp">
+                        <rect key="frame" x="8" y="68" width="56" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="cce-Y5-QLe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0g-YX-epV">
+                        <rect key="frame" x="65" y="68" width="247" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="jLO-qe-pMg" firstAttribute="top" secondItem="BkG-kN-phs" secondAttribute="topMargin" id="0AH-On-QTY"/>
+                    <constraint firstItem="Zb1-YM-hjw" firstAttribute="leading" secondItem="jLO-qe-pMg" secondAttribute="leading" id="Buu-KB-e4m"/>
+                    <constraint firstItem="Zb1-YM-hjw" firstAttribute="baseline" secondItem="OQM-On-F5s" secondAttribute="baseline" id="BxJ-lK-Xmf"/>
+                    <constraint firstItem="OQM-On-F5s" firstAttribute="trailing" secondItem="L0g-YX-epV" secondAttribute="trailing" id="DBb-He-m5I"/>
+                    <constraint firstItem="xxL-fX-xrp" firstAttribute="baseline" secondItem="L0g-YX-epV" secondAttribute="baseline" id="FhE-M0-2oq"/>
+                    <constraint firstItem="L0g-YX-epV" firstAttribute="trailing" secondItem="LlQ-LZ-0sZ" secondAttribute="trailing" id="J6P-NA-OoB"/>
+                    <constraint firstItem="LlQ-LZ-0sZ" firstAttribute="top" secondItem="xxL-fX-xrp" secondAttribute="bottom" constant="8" symbolic="YES" id="NgU-fP-PZN"/>
+                    <constraint firstItem="OQM-On-F5s" firstAttribute="centerY" secondItem="BkG-kN-phs" secondAttribute="centerY" id="O8x-kD-CYm"/>
+                    <constraint firstItem="Zb1-YM-hjw" firstAttribute="leading" secondItem="xxL-fX-xrp" secondAttribute="leading" id="RWX-qg-RTJ"/>
+                    <constraint firstItem="OQM-On-F5s" firstAttribute="trailing" secondItem="wJ2-Pw-ZaK" secondAttribute="trailing" id="Tio-bE-uui"/>
+                    <constraint firstItem="LlQ-LZ-0sZ" firstAttribute="leading" secondItem="xxL-fX-xrp" secondAttribute="leading" id="YOG-wa-j0a"/>
+                    <constraint firstItem="LlQ-LZ-0sZ" firstAttribute="leading" secondItem="BkG-kN-phs" secondAttribute="leadingMargin" id="aV5-uB-Aci"/>
+                    <constraint firstItem="L0g-YX-epV" firstAttribute="leading" secondItem="xxL-fX-xrp" secondAttribute="trailing" constant="1" id="h80-vP-MqY"/>
+                    <constraint firstItem="LlQ-LZ-0sZ" firstAttribute="trailing" secondItem="BkG-kN-phs" secondAttribute="trailingMargin" id="htj-1v-8oD"/>
+                    <constraint firstItem="L0g-YX-epV" firstAttribute="centerY" secondItem="xxL-fX-xrp" secondAttribute="centerY" id="mHF-uJ-ODG"/>
+                    <constraint firstItem="xxL-fX-xrp" firstAttribute="top" secondItem="Zb1-YM-hjw" secondAttribute="bottom" constant="8" symbolic="YES" id="rao-p3-Ddt"/>
+                    <constraint firstItem="wJ2-Pw-ZaK" firstAttribute="baseline" secondItem="jLO-qe-pMg" secondAttribute="baseline" id="wII-W4-Kyk"/>
+                    <constraint firstItem="OQM-On-F5s" firstAttribute="leading" secondItem="Zb1-YM-hjw" secondAttribute="trailing" constant="1" id="zEK-1f-Lj4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="0.30588235289999999" green="0.2901960784" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="lblDay" destination="jLO-qe-pMg" id="uv4-Vq-OFH"/>
+                <outlet property="lblDuration" destination="wJ2-Pw-ZaK" id="S1b-Xu-5ev"/>
+                <outlet property="lblName0" destination="Zb1-YM-hjw" id="Ret-w7-ZAd"/>
+                <outlet property="lblNameValue0" destination="OQM-On-F5s" id="dXw-JZ-jXW"/>
+                <outlet property="lblPrice0" destination="L0g-YX-epV" id="fFc-rY-OAk"/>
+            </connections>
+            <point key="canvasLocation" x="381" y="489"/>
+        </tableViewCell>
+    </objects>
+</document>

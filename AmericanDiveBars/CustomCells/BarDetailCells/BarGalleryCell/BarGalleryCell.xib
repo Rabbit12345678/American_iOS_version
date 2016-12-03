@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BarGalleryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ex-Xs-lmq">
+                        <rect key="frame" x="20" y="8" width="280" height="240"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="280" id="P6E-SO-9zw"/>
+                            <constraint firstAttribute="height" constant="240" id="c5B-0t-zQ6"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NCL-6p-Ty2" appends="YES" id="xCS-Vo-TwJ"/>
+                        </connections>
+                    </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyb-e1-p0U">
+                        <rect key="frame" x="20" y="218" width="280" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="TUY-UG-RZh"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gBN-cG-bFV" appends="YES" id="jzk-gK-pQW"/>
+                        </connections>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8z-q5-ciB">
+                        <rect key="frame" x="20" y="218" width="280" height="30"/>
+                        <animations/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="fwk-37-8Gs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Sn0-vn-kVW" appends="YES" id="MRp-L1-tGS"/>
+                        </connections>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Wq9-OC-SQj">
+                        <rect key="frame" x="20" y="256" width="280" height="87"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="87" id="KNs-9q-fJF"/>
+                            <constraint firstAttribute="width" constant="280" id="SHz-yL-hqo"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZCL-jE-ewk">
+                            <size key="itemSize" width="87" height="87"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="6ya-yk-zXM"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="gE1-sz-Bf7"/>
+                        </connections>
+                    </collectionView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="eNc-gj-OKZ">
+                        <rect key="frame" x="0.0" y="289" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="mVy-uJ-t0C"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-d3-XAn">
+                        <rect key="frame" x="300" y="289" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="V5e-Q3-cah"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This bar has not yet added any information regarding Bar Gallery." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="Mzl-Gz-Tfw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="bYU-d3-XAn" firstAttribute="top" secondItem="eNc-gj-OKZ" secondAttribute="top" id="2zJ-xf-gqU"/>
+                    <constraint firstItem="2Ex-Xs-lmq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3hM-fv-J0c"/>
+                    <constraint firstItem="2Ex-Xs-lmq" firstAttribute="bottom" secondItem="C8z-q5-ciB" secondAttribute="bottom" id="6DD-iB-Hox"/>
+                    <constraint firstItem="Mzl-Gz-Tfw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FZX-2u-Yga"/>
+                    <constraint firstItem="2Ex-Xs-lmq" firstAttribute="trailing" secondItem="C8z-q5-ciB" secondAttribute="trailing" id="FxF-hp-7NT"/>
+                    <constraint firstItem="2Ex-Xs-lmq" firstAttribute="trailing" secondItem="Oyb-e1-p0U" secondAttribute="trailing" id="GBs-I6-PzN"/>
+                    <constraint firstItem="eNc-gj-OKZ" firstAttribute="centerY" secondItem="Wq9-OC-SQj" secondAttribute="centerY" id="GkI-xG-1Ya"/>
+                    <constraint firstAttribute="centerX" secondItem="Oyb-e1-p0U" secondAttribute="centerX" id="InE-6Y-FMy"/>
+                    <constraint firstItem="2Ex-Xs-lmq" firstAttribute="bottom" secondItem="Oyb-e1-p0U" secondAttribute="bottom" id="LQX-ey-xJb"/>
+                    <constraint firstAttribute="centerX" secondItem="Wq9-OC-SQj" secondAttribute="centerX" id="POK-8l-fAr"/>
+                    <constraint firstAttribute="centerX" secondItem="2Ex-Xs-lmq" secondAttribute="centerX" id="Qid-1f-JYs"/>
+                    <constraint firstItem="bYU-d3-XAn" firstAttribute="leading" secondItem="Wq9-OC-SQj" secondAttribute="trailing" id="UPO-bB-29H"/>
+                    <constraint firstItem="2Ex-Xs-lmq" firstAttribute="leading" secondItem="C8z-q5-ciB" secondAttribute="leading" id="aq8-2c-Gkg"/>
+                    <constraint firstItem="Wq9-OC-SQj" firstAttribute="top" secondItem="2Ex-Xs-lmq" secondAttribute="bottom" constant="8" id="cP9-z7-JV0"/>
+                    <constraint firstItem="2Ex-Xs-lmq" firstAttribute="leading" secondItem="Oyb-e1-p0U" secondAttribute="leading" id="hmv-Kb-rZi"/>
+                    <constraint firstAttribute="trailing" secondItem="Mzl-Gz-Tfw" secondAttribute="trailing" id="l2b-aF-aer"/>
+                    <constraint firstAttribute="bottom" secondItem="Mzl-Gz-Tfw" secondAttribute="bottom" id="lty-Rd-dq9"/>
+                    <constraint firstAttribute="centerX" secondItem="C8z-q5-ciB" secondAttribute="centerX" id="mjz-KK-ZjI"/>
+                    <constraint firstItem="Mzl-Gz-Tfw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pf8-Gh-eXh"/>
+                    <constraint firstItem="Wq9-OC-SQj" firstAttribute="leading" secondItem="eNc-gj-OKZ" secondAttribute="trailing" id="wNA-sQ-YV4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="cv" destination="Wq9-OC-SQj" id="gpJ-cs-1yd"/>
+                <outlet property="imgBarLarge" destination="2Ex-Xs-lmq" id="Cbh-MS-vPp"/>
+                <outlet property="lblBarTitle" destination="C8z-q5-ciB" id="O35-7e-sVN"/>
+                <outlet property="lblNoData" destination="Mzl-Gz-Tfw" id="moP-LB-Nbn"/>
+                <outlet property="leftArrow" destination="eNc-gj-OKZ" id="7eb-8z-ewe"/>
+                <outlet property="rightArrow" destination="bYU-d3-XAn" id="SeD-5d-XZ6"/>
+                <outlet property="viewShadow" destination="Oyb-e1-p0U" id="Nhk-E3-Yt2"/>
+            </connections>
+            <point key="canvasLocation" x="529" y="264"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="NCL-6p-Ty2">
+            <connections>
+                <action selector="bigImageTapped:" destination="KGk-i7-Jjw" id="g3T-ke-gsg"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="gBN-cG-bFV">
+            <connections>
+                <action selector="bigImageTapped:" destination="KGk-i7-Jjw" id="6pN-bA-bbm"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Sn0-vn-kVW">
+            <connections>
+                <action selector="bigImageTapped:" destination="KGk-i7-Jjw" id="MuQ-Rk-OOf"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="left-arrow.png" width="20" height="20"/>
+        <image name="right-arrow.png" width="20" height="20"/>
+    </resources>
+</document>

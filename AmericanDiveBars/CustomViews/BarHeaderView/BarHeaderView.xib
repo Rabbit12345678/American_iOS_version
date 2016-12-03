@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WVW-ib-40I" customClass="BarHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vb-9Z-wKb">
+                    <rect key="frame" x="8" y="12" width="171" height="26"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGP-Fz-Lw2">
+                    <rect key="frame" x="183" y="12" width="129" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATE DESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivc-Yt-602">
+                            <rect key="frame" x="0.0" y="0.0" width="103" height="26"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                            <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="41k-t6-W6P">
+                            <rect key="frame" x="103" y="0.0" width="26" height="26"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="26" id="xNC-vr-I9j"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="41k-t6-W6P" firstAttribute="top" secondItem="Ivc-Yt-602" secondAttribute="top" id="0EL-AB-6jG"/>
+                        <constraint firstItem="41k-t6-W6P" firstAttribute="top" secondItem="kGP-Fz-Lw2" secondAttribute="top" id="5NS-EZ-aWL"/>
+                        <constraint firstAttribute="trailing" secondItem="41k-t6-W6P" secondAttribute="trailing" id="7FS-C1-JH8"/>
+                        <constraint firstItem="Ivc-Yt-602" firstAttribute="leading" secondItem="kGP-Fz-Lw2" secondAttribute="leading" id="8vu-8k-yhz"/>
+                        <constraint firstAttribute="width" constant="129" id="9HV-bC-CYe"/>
+                        <constraint firstAttribute="bottom" secondItem="41k-t6-W6P" secondAttribute="bottom" id="aW6-kC-qR4"/>
+                        <constraint firstItem="Ivc-Yt-602" firstAttribute="bottom" secondItem="41k-t6-W6P" secondAttribute="bottom" id="pyu-nE-tMg"/>
+                        <constraint firstItem="41k-t6-W6P" firstAttribute="leading" secondItem="Ivc-Yt-602" secondAttribute="trailing" id="vd8-N9-p45"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="rjH-CK-jhd" appends="YES" id="DJf-Qw-wHM"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1803921568627451" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kGP-Fz-Lw2" firstAttribute="top" secondItem="1Vb-9Z-wKb" secondAttribute="top" id="C5D-EU-E3F"/>
+                <constraint firstItem="1Vb-9Z-wKb" firstAttribute="bottom" secondItem="kGP-Fz-Lw2" secondAttribute="bottom" id="Qy3-CJ-vFI"/>
+                <constraint firstAttribute="trailing" secondItem="kGP-Fz-Lw2" secondAttribute="trailing" constant="8" id="RG7-32-nZm"/>
+                <constraint firstItem="kGP-Fz-Lw2" firstAttribute="leading" secondItem="1Vb-9Z-wKb" secondAttribute="trailing" constant="4" id="Xcc-Ce-Eyt"/>
+                <constraint firstItem="1Vb-9Z-wKb" firstAttribute="top" secondItem="WVW-ib-40I" secondAttribute="top" constant="12" id="bEb-nM-aPv"/>
+                <constraint firstItem="1Vb-9Z-wKb" firstAttribute="leading" secondItem="WVW-ib-40I" secondAttribute="leading" constant="8" id="rVq-GF-MCg"/>
+                <constraint firstItem="1Vb-9Z-wKb" firstAttribute="centerY" secondItem="WVW-ib-40I" secondAttribute="centerY" id="z75-Yu-p6Q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblFilterType" destination="Ivc-Yt-602" id="ITd-Zb-tZk"/>
+                <outlet property="lblSearchTitle" destination="1Vb-9Z-wKb" id="OvZ-TX-dW1"/>
+                <outlet property="viewSorting" destination="kGP-Fz-Lw2" id="eEL-eP-T6L"/>
+            </connections>
+            <point key="canvasLocation" x="426" y="259"/>
+        </view>
+        <tapGestureRecognizer id="rjH-CK-jhd">
+            <connections>
+                <action selector="viiewSorting_Clicked:" destination="WVW-ib-40I" id="aDV-HR-K3E"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="dropdown-arrow.png" width="26" height="26"/>
+    </resources>
+</document>

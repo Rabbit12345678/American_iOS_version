@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WVW-ib-40I" customClass="SearchHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GY-co-wWX">
+                    <rect key="frame" x="0.0" y="39" width="320" height="72"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search here.." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vsM-uL-FeA">
+                            <rect key="frame" x="10" y="12" width="300" height="48"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vsM-uL-FeA" firstAttribute="top" secondItem="4GY-co-wWX" secondAttribute="top" constant="12" id="8Qv-cR-N40"/>
+                        <constraint firstItem="vsM-uL-FeA" firstAttribute="centerY" secondItem="4GY-co-wWX" secondAttribute="centerY" id="Y2g-x1-hrE"/>
+                        <constraint firstItem="vsM-uL-FeA" firstAttribute="centerX" secondItem="4GY-co-wWX" secondAttribute="centerX" id="tBs-SF-Z4U"/>
+                        <constraint firstItem="vsM-uL-FeA" firstAttribute="leading" secondItem="4GY-co-wWX" secondAttribute="leading" constant="10" id="wq2-hY-ZoD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aq-NS-1kf">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="39"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Q9F-Ea-Kld"/>
+                        <constraint firstAttribute="height" constant="39" id="j1D-eJ-a5v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCancel_Clicked:" destination="WVW-ib-40I" eventType="touchUpInside" id="hYP-oD-0PR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Bar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywP-rj-3iw">
+                    <rect key="frame" x="70" y="0.0" width="180" height="39"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09Y-9b-JgX">
+                    <rect key="frame" x="250" y="0.0" width="70" height="39"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="0fq-2e-Xge"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnDoneForSearch:" destination="WVW-ib-40I" eventType="valueChanged" id="wEN-bG-lux"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.74117647058823533" green="0.49803921568627452" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4aq-NS-1kf" firstAttribute="top" secondItem="ywP-rj-3iw" secondAttribute="top" id="7Xg-Bv-eiM"/>
+                <constraint firstItem="4aq-NS-1kf" firstAttribute="leading" secondItem="WVW-ib-40I" secondAttribute="leading" id="Bg0-Pb-xT4"/>
+                <constraint firstItem="4GY-co-wWX" firstAttribute="top" secondItem="ywP-rj-3iw" secondAttribute="bottom" id="G2s-BI-PAg"/>
+                <constraint firstAttribute="trailing" secondItem="09Y-9b-JgX" secondAttribute="trailing" id="HJP-wy-zem"/>
+                <constraint firstItem="ywP-rj-3iw" firstAttribute="leading" secondItem="4aq-NS-1kf" secondAttribute="trailing" id="NM7-qc-bBu"/>
+                <constraint firstAttribute="bottom" secondItem="4GY-co-wWX" secondAttribute="bottom" constant="-1" id="NoC-4T-MNr"/>
+                <constraint firstItem="4aq-NS-1kf" firstAttribute="leading" secondItem="4GY-co-wWX" secondAttribute="leading" id="ToN-8x-IBg"/>
+                <constraint firstItem="09Y-9b-JgX" firstAttribute="leading" secondItem="ywP-rj-3iw" secondAttribute="trailing" id="Vgb-y6-C9z"/>
+                <constraint firstItem="09Y-9b-JgX" firstAttribute="bottom" secondItem="ywP-rj-3iw" secondAttribute="bottom" id="epf-iC-kgE"/>
+                <constraint firstItem="4aq-NS-1kf" firstAttribute="bottom" secondItem="ywP-rj-3iw" secondAttribute="bottom" id="gqo-8f-Pex"/>
+                <constraint firstItem="09Y-9b-JgX" firstAttribute="trailing" secondItem="4GY-co-wWX" secondAttribute="trailing" id="jV8-QT-j1d"/>
+                <constraint firstItem="ywP-rj-3iw" firstAttribute="top" secondItem="09Y-9b-JgX" secondAttribute="top" id="pAr-UZ-ZkM"/>
+                <constraint firstItem="09Y-9b-JgX" firstAttribute="top" secondItem="WVW-ib-40I" secondAttribute="top" id="pnV-r7-c6i"/>
+                <constraint firstItem="4GY-co-wWX" firstAttribute="centerX" secondItem="ywP-rj-3iw" secondAttribute="centerX" id="qyQ-15-XcE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="txtSearch" destination="vsM-uL-FeA" id="oDx-os-EPa"/>
+            </connections>
+            <point key="canvasLocation" x="575" y="243"/>
+        </view>
+    </objects>
+</document>

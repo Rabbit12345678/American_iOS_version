@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="338" id="KGk-i7-Jjw" customClass="ReportBarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="334"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="333"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-nm-qf8">
+                        <rect key="frame" x="8" y="8" width="56" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="Bqo-YT-UBn"/>
+                            <constraint firstAttribute="height" constant="30" id="Kyp-Ma-nUb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FwQ-R9-r5B">
+                        <rect key="frame" x="72" y="8" width="240" height="30"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="7fc-I3-YcC"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu2-1r-hIh" customClass="ADBRadioButton">
+                        <rect key="frame" x="8" y="84" width="304" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3gW-Pm-20w"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <state key="normal" title=" Has the wrong address" image="radio-off.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwl-Kq-eWU" customClass="ADBRadioButton">
+                        <rect key="frame" x="8" y="122" width="304" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="AR6-jE-T6W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <state key="normal" title=" Is not a Bar" image="radio-off.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq9-Nz-1tl" customClass="ADBRadioButton">
+                        <rect key="frame" x="8" y="160" width="304" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="TBs-v1-3ER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <state key="normal" title=" Other" image="radio-off.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="401" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kml-4n-PI4">
+                        <rect key="frame" x="8" y="198" width="304" height="0.0"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="Li9-8S-dyL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="pfN-ip-QLJ"/>
+                        </connections>
+                    </textView>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbU-FE-jRh" customClass="ADBRadioButton">
+                        <rect key="frame" x="8" y="46" width="304" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="OZ4-e8-gQo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <state key="normal" title=" Is closed" image="radio-on.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f50-Qu-8uG">
+                        <rect key="frame" x="212" y="206" width="100" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Hvg-Fd-02K"/>
+                            <constraint firstAttribute="width" constant="100" id="q6u-DA-dmg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                        <state key="normal" title="Submit" backgroundImage="gradient.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="uq9-Nz-1tl" firstAttribute="leading" secondItem="Kml-4n-PI4" secondAttribute="leading" id="2xs-2z-nPq"/>
+                    <constraint firstItem="cbU-FE-jRh" firstAttribute="leading" secondItem="pu2-1r-hIh" secondAttribute="leading" id="3Ud-tO-Tif"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="f50-Qu-8uG" secondAttribute="trailing" id="3wc-JZ-cbb"/>
+                    <constraint firstItem="uq9-Nz-1tl" firstAttribute="top" secondItem="Wwl-Kq-eWU" secondAttribute="bottom" constant="8" symbolic="YES" id="4n1-Pl-Z0n"/>
+                    <constraint firstItem="cbU-FE-jRh" firstAttribute="top" secondItem="FwQ-R9-r5B" secondAttribute="bottom" constant="8" symbolic="YES" id="FDu-2l-gLP"/>
+                    <constraint firstItem="Wwl-Kq-eWU" firstAttribute="trailing" secondItem="uq9-Nz-1tl" secondAttribute="trailing" id="Hib-nf-ddJ"/>
+                    <constraint firstItem="pu2-1r-hIh" firstAttribute="top" secondItem="cbU-FE-jRh" secondAttribute="bottom" constant="8" symbolic="YES" id="LRO-cG-OWq"/>
+                    <constraint firstItem="cbU-FE-jRh" firstAttribute="trailing" secondItem="pu2-1r-hIh" secondAttribute="trailing" id="M81-bH-ykr"/>
+                    <constraint firstItem="FwQ-R9-r5B" firstAttribute="leading" secondItem="yJh-nm-qf8" secondAttribute="trailing" constant="8" symbolic="YES" id="MLH-8b-Bhg"/>
+                    <constraint firstItem="uq9-Nz-1tl" firstAttribute="trailing" secondItem="Kml-4n-PI4" secondAttribute="trailing" id="RmK-Ah-xQU"/>
+                    <constraint firstItem="FwQ-R9-r5B" firstAttribute="trailing" secondItem="cbU-FE-jRh" secondAttribute="trailing" id="Rzd-S6-Sl9"/>
+                    <constraint firstItem="f50-Qu-8uG" firstAttribute="top" secondItem="Kml-4n-PI4" secondAttribute="bottom" constant="8" symbolic="YES" id="Xux-bQ-mfR"/>
+                    <constraint firstItem="yJh-nm-qf8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Z35-M2-QzR"/>
+                    <constraint firstItem="yJh-nm-qf8" firstAttribute="leading" secondItem="cbU-FE-jRh" secondAttribute="leading" id="aT3-xf-Vb0"/>
+                    <constraint firstItem="yJh-nm-qf8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ehd-GL-JXu"/>
+                    <constraint firstItem="yJh-nm-qf8" firstAttribute="top" secondItem="FwQ-R9-r5B" secondAttribute="top" id="isW-3K-raL"/>
+                    <constraint firstItem="pu2-1r-hIh" firstAttribute="trailing" secondItem="Wwl-Kq-eWU" secondAttribute="trailing" id="jwb-th-Umy"/>
+                    <constraint firstItem="Wwl-Kq-eWU" firstAttribute="leading" secondItem="uq9-Nz-1tl" secondAttribute="leading" id="mTG-4p-haD"/>
+                    <constraint firstItem="pu2-1r-hIh" firstAttribute="leading" secondItem="Wwl-Kq-eWU" secondAttribute="leading" id="nH6-9x-Yqr"/>
+                    <constraint firstItem="FwQ-R9-r5B" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="nLr-xF-3UF"/>
+                    <constraint firstItem="Kml-4n-PI4" firstAttribute="top" secondItem="uq9-Nz-1tl" secondAttribute="bottom" constant="8" symbolic="YES" id="oiY-js-9wO"/>
+                    <constraint firstItem="Wwl-Kq-eWU" firstAttribute="top" secondItem="pu2-1r-hIh" secondAttribute="bottom" constant="8" symbolic="YES" id="vfx-mS-RAd"/>
+                    <constraint firstItem="cbU-FE-jRh" firstAttribute="top" secondItem="yJh-nm-qf8" secondAttribute="bottom" constant="8" symbolic="YES" id="z7g-y7-er9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnHasWrong" destination="pu2-1r-hIh" id="Rae-hl-5Pm"/>
+                <outlet property="btnIsClosed" destination="cbU-FE-jRh" id="533-Ym-msz"/>
+                <outlet property="btnIsNot" destination="Wwl-Kq-eWU" id="Eiz-ef-r3e"/>
+                <outlet property="btnOther" destination="uq9-Nz-1tl" id="j2H-pY-MPu"/>
+                <outlet property="btnSubmit" destination="f50-Qu-8uG" id="O96-7V-IyZ"/>
+                <outlet property="heightTxtOtherDesc" destination="Li9-8S-dyL" id="gUE-Hn-umq"/>
+                <outlet property="txtEmail" destination="FwQ-R9-r5B" id="aud-nw-NcB"/>
+                <outlet property="txtOtherDesc" destination="Kml-4n-PI4" id="eCI-el-21F"/>
+            </connections>
+            <point key="canvasLocation" x="392" y="282"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="330" id="lN5-We-gzZ" customClass="ReportBarCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="334"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lN5-We-gzZ" id="VuL-ho-oJW">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="333"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Beh-JC-om1">
+                        <rect key="frame" x="184" y="8" width="400" height="317"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ros-gk-SpN">
+                                <rect key="frame" x="0.0" y="0.0" width="56" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="FZ7-PH-lQe"/>
+                                    <constraint firstAttribute="height" constant="30" id="hqe-7u-4GZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIs-Pu-YPo">
+                                <rect key="frame" x="64" y="0.0" width="336" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="Y81-Ge-yyZ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJm-rT-nzm" customClass="ADBRadioButton">
+                                <rect key="frame" x="0.0" y="76" width="400" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jgk-fu-jQ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" Has the wrong address" image="radio-off.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFQ-TF-t4d" customClass="ADBRadioButton">
+                                <rect key="frame" x="0.0" y="152" width="400" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bnG-8l-3fD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" Other" image="radio-off.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="401" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2yc-Mq-oky">
+                                <rect key="frame" x="0.0" y="190" width="400" height="0.0"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="XiR-4y-gB4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="Lw0-vt-xFh"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBG-l4-9c2" customClass="ADBRadioButton">
+                                <rect key="frame" x="0.0" y="38" width="400" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4xV-Yg-Stt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" Is closed" image="radio-off.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mK4-z8-RQg">
+                                <rect key="frame" x="292" y="198" width="100" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PLH-26-YaO"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZZ6-Hh-Pcr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <state key="normal" title="Submit" backgroundImage="gradient.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUD-bd-64c" customClass="ADBRadioButton">
+                                <rect key="frame" x="0.0" y="114" width="400" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Zo-DC-O5r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <state key="normal" title=" Is not a Bar" image="radio-off.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oIs-Pu-YPo" firstAttribute="trailing" secondItem="MBG-l4-9c2" secondAttribute="trailing" id="0eW-4Z-1EJ"/>
+                            <constraint firstItem="wFQ-TF-t4d" firstAttribute="trailing" secondItem="2yc-Mq-oky" secondAttribute="trailing" id="2t5-If-epj"/>
+                            <constraint firstItem="bJm-rT-nzm" firstAttribute="trailing" secondItem="EUD-bd-64c" secondAttribute="trailing" id="6iu-X0-ht1"/>
+                            <constraint firstItem="MBG-l4-9c2" firstAttribute="trailing" secondItem="bJm-rT-nzm" secondAttribute="trailing" id="8c6-Lx-jkz"/>
+                            <constraint firstItem="EUD-bd-64c" firstAttribute="leading" secondItem="wFQ-TF-t4d" secondAttribute="leading" id="CFc-lG-Kh9"/>
+                            <constraint firstItem="wFQ-TF-t4d" firstAttribute="top" secondItem="EUD-bd-64c" secondAttribute="bottom" constant="8" symbolic="YES" id="F6S-q1-BXI"/>
+                            <constraint firstItem="MBG-l4-9c2" firstAttribute="top" secondItem="oIs-Pu-YPo" secondAttribute="bottom" constant="8" symbolic="YES" id="HYa-Zh-HDe"/>
+                            <constraint firstItem="bJm-rT-nzm" firstAttribute="top" secondItem="MBG-l4-9c2" secondAttribute="bottom" constant="8" symbolic="YES" id="Jzn-h4-tpv"/>
+                            <constraint firstItem="MBG-l4-9c2" firstAttribute="top" secondItem="ros-gk-SpN" secondAttribute="bottom" constant="8" symbolic="YES" id="MWt-bM-e4S"/>
+                            <constraint firstItem="2yc-Mq-oky" firstAttribute="top" secondItem="wFQ-TF-t4d" secondAttribute="bottom" constant="8" symbolic="YES" id="PPY-la-ely"/>
+                            <constraint firstItem="ros-gk-SpN" firstAttribute="top" secondItem="oIs-Pu-YPo" secondAttribute="top" id="Rgj-xn-1JG"/>
+                            <constraint firstAttribute="trailing" secondItem="oIs-Pu-YPo" secondAttribute="trailing" id="SX9-cW-9pc"/>
+                            <constraint firstItem="EUD-bd-64c" firstAttribute="top" secondItem="bJm-rT-nzm" secondAttribute="bottom" constant="8" symbolic="YES" id="TC1-Fw-0f0"/>
+                            <constraint firstItem="MBG-l4-9c2" firstAttribute="leading" secondItem="bJm-rT-nzm" secondAttribute="leading" id="Tsh-9n-ex5"/>
+                            <constraint firstItem="mK4-z8-RQg" firstAttribute="top" secondItem="2yc-Mq-oky" secondAttribute="bottom" constant="8" symbolic="YES" id="Y4t-sx-y6b"/>
+                            <constraint firstItem="ros-gk-SpN" firstAttribute="leading" secondItem="Beh-JC-om1" secondAttribute="leading" id="Y65-63-Ocj"/>
+                            <constraint firstItem="wFQ-TF-t4d" firstAttribute="leading" secondItem="2yc-Mq-oky" secondAttribute="leading" id="fqt-EW-vel"/>
+                            <constraint firstItem="EUD-bd-64c" firstAttribute="trailing" secondItem="wFQ-TF-t4d" secondAttribute="trailing" id="jzC-zS-otE"/>
+                            <constraint firstItem="bJm-rT-nzm" firstAttribute="leading" secondItem="EUD-bd-64c" secondAttribute="leading" id="mjU-G7-TTD"/>
+                            <constraint firstAttribute="width" constant="400" id="oeO-KN-REj"/>
+                            <constraint firstItem="oIs-Pu-YPo" firstAttribute="leading" secondItem="ros-gk-SpN" secondAttribute="trailing" constant="8" symbolic="YES" id="pFF-h4-G7h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mK4-z8-RQg" secondAttribute="trailing" id="tqo-gV-r0V"/>
+                            <constraint firstItem="ros-gk-SpN" firstAttribute="leading" secondItem="MBG-l4-9c2" secondAttribute="leading" id="vyS-wf-TEc"/>
+                            <constraint firstItem="ros-gk-SpN" firstAttribute="top" secondItem="Beh-JC-om1" secondAttribute="top" id="zt1-pr-hME"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="Beh-JC-om1" firstAttribute="bottom" secondItem="VuL-ho-oJW" secondAttribute="bottomMargin" id="gz5-Sg-C9B"/>
+                    <constraint firstItem="Beh-JC-om1" firstAttribute="centerX" secondItem="VuL-ho-oJW" secondAttribute="centerX" id="lVB-iY-paI"/>
+                    <constraint firstItem="Beh-JC-om1" firstAttribute="top" secondItem="VuL-ho-oJW" secondAttribute="topMargin" id="umR-5X-lUc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnHasWrong" destination="bJm-rT-nzm" id="2Wo-Jt-pIJ"/>
+                <outlet property="btnIsClosed" destination="MBG-l4-9c2" id="9Og-c7-edB"/>
+                <outlet property="btnIsNot" destination="EUD-bd-64c" id="dn6-Eh-faP"/>
+                <outlet property="btnOther" destination="wFQ-TF-t4d" id="Y00-MQ-LyZ"/>
+                <outlet property="btnSubmit" destination="mK4-z8-RQg" id="jxl-h7-2xk"/>
+                <outlet property="heightTxtOtherDesc" destination="XiR-4y-gB4" id="9Ci-BB-1t1"/>
+                <outlet property="txtEmail" destination="oIs-Pu-YPo" id="IoA-mj-Ru6"/>
+                <outlet property="txtOtherDesc" destination="2yc-Mq-oky" id="V0o-no-Ax3"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="642"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+        <image name="radio-off.png" width="20" height="20"/>
+        <image name="radio-on.png" width="20" height="20"/>
+    </resources>
+</document>

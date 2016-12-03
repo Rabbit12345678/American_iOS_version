@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="efU-Jg-1CG" customClass="BarWriteReviewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="efU-Jg-1CG" id="lCb-sh-pIF">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Title :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qS-wi-lP4">
+                        <rect key="frame" x="8" y="8" width="105" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="3AA-Oh-QzY"/>
+                            <constraint firstAttribute="height" constant="30" id="3kk-4t-bkY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Description :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="105" translatesAutoresizingMaskIntoConstraints="NO" id="A5O-Ue-MMD">
+                        <rect key="frame" x="8" y="46" width="105" height="55"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" tag="601" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Review title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eed-hR-ZYY">
+                        <rect key="frame" x="121" y="8" width="191" height="30"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="7qe-pq-fxI"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yu-Jb-sme">
+                        <rect key="frame" x="212" y="171" width="100" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="qAA-Q1-WCo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                        <state key="normal" title="Post" backgroundImage="gradient.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klv-vR-R63">
+                        <rect key="frame" x="8" y="138" width="105" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="D6Y-Zp-qzz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="501" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="miP-xh-qnL">
+                        <rect key="frame" x="121" y="46" width="191" height="84"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="CuM-5W-sP4"/>
+                        </connections>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcL-Pg-ZtW" customClass="RateView">
+                        <rect key="frame" x="121" y="143" width="104" height="20"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="Bwi-lt-iJ6"/>
+                            <constraint firstAttribute="height" constant="20" id="u5i-bc-3T7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="A5O-Ue-MMD" firstAttribute="top" secondItem="miP-xh-qnL" secondAttribute="top" id="1iK-nB-ccy"/>
+                    <constraint firstItem="hcL-Pg-ZtW" firstAttribute="leading" secondItem="klv-vR-R63" secondAttribute="trailing" constant="8" symbolic="YES" id="2CJ-yS-n0t"/>
+                    <constraint firstItem="hcL-Pg-ZtW" firstAttribute="top" secondItem="miP-xh-qnL" secondAttribute="bottom" constant="13" id="4cU-ik-XFz"/>
+                    <constraint firstItem="Eed-hR-ZYY" firstAttribute="trailing" secondItem="miP-xh-qnL" secondAttribute="trailing" id="Anj-8e-Vyx"/>
+                    <constraint firstItem="1Yu-Jb-sme" firstAttribute="top" secondItem="hcL-Pg-ZtW" secondAttribute="bottom" constant="8" symbolic="YES" id="CJp-YI-bn8"/>
+                    <constraint firstItem="hcL-Pg-ZtW" firstAttribute="centerY" secondItem="klv-vR-R63" secondAttribute="centerY" id="CZI-Hx-BWp"/>
+                    <constraint firstItem="klv-vR-R63" firstAttribute="top" secondItem="A5O-Ue-MMD" secondAttribute="bottom" constant="37" id="D9y-rv-GHz"/>
+                    <constraint firstItem="hcL-Pg-ZtW" firstAttribute="leading" secondItem="miP-xh-qnL" secondAttribute="leading" id="EFb-HQ-geg"/>
+                    <constraint firstItem="1Yu-Jb-sme" firstAttribute="bottom" secondItem="lCb-sh-pIF" secondAttribute="bottomMargin" id="EpH-lv-Uxh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="klv-vR-R63" secondAttribute="bottom" constant="33" id="Rtq-QR-v7B"/>
+                    <constraint firstItem="6qS-wi-lP4" firstAttribute="top" secondItem="lCb-sh-pIF" secondAttribute="topMargin" id="WVr-ps-FLz"/>
+                    <constraint firstItem="miP-xh-qnL" firstAttribute="leading" secondItem="A5O-Ue-MMD" secondAttribute="trailing" constant="8" symbolic="YES" id="aIN-0P-RQr"/>
+                    <constraint firstItem="Eed-hR-ZYY" firstAttribute="leading" secondItem="6qS-wi-lP4" secondAttribute="trailing" constant="8" symbolic="YES" id="blf-5x-smp"/>
+                    <constraint firstItem="miP-xh-qnL" firstAttribute="trailing" secondItem="1Yu-Jb-sme" secondAttribute="trailing" id="cDV-iU-BKD"/>
+                    <constraint firstItem="6qS-wi-lP4" firstAttribute="leading" secondItem="A5O-Ue-MMD" secondAttribute="leading" id="e36-Bv-dtS"/>
+                    <constraint firstItem="A5O-Ue-MMD" firstAttribute="top" secondItem="6qS-wi-lP4" secondAttribute="bottom" constant="8" symbolic="YES" id="f65-U5-RHJ"/>
+                    <constraint firstItem="6qS-wi-lP4" firstAttribute="leading" secondItem="lCb-sh-pIF" secondAttribute="leadingMargin" id="hrQ-oF-h1i"/>
+                    <constraint firstItem="Eed-hR-ZYY" firstAttribute="leading" secondItem="miP-xh-qnL" secondAttribute="leading" id="k5e-rR-Wj8"/>
+                    <constraint firstItem="A5O-Ue-MMD" firstAttribute="leading" secondItem="klv-vR-R63" secondAttribute="leading" id="lZH-n9-BaP"/>
+                    <constraint firstItem="miP-xh-qnL" firstAttribute="top" secondItem="Eed-hR-ZYY" secondAttribute="bottom" constant="8" symbolic="YES" id="nM8-JP-7fG"/>
+                    <constraint firstItem="Eed-hR-ZYY" firstAttribute="trailing" secondItem="lCb-sh-pIF" secondAttribute="trailingMargin" id="p1i-Kr-gLT"/>
+                    <constraint firstItem="6qS-wi-lP4" firstAttribute="top" secondItem="Eed-hR-ZYY" secondAttribute="top" id="pa1-44-TGr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnSubmit" destination="1Yu-Jb-sme" id="ihx-ms-whf"/>
+                <outlet property="rateView" destination="hcL-Pg-ZtW" id="pOj-wb-Vhq"/>
+                <outlet property="txtReviewDesc" destination="miP-xh-qnL" id="WzB-fF-xvr"/>
+                <outlet property="txtReviewTitle" destination="Eed-hR-ZYY" id="pnx-Gg-OOt"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="215"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="cKC-Nv-s1q" customClass="BarWriteReviewCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cKC-Nv-s1q" id="vKh-a9-Zss">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huB-yi-N27">
+                        <rect key="frame" x="184" y="8" width="400" height="193"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Title :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpw-GF-hA1">
+                                <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c5v-yz-Iza"/>
+                                    <constraint firstAttribute="width" constant="105" id="ehW-5S-bv1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="601" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Review title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m54-qg-nHb">
+                                <rect key="frame" x="113" y="0.0" width="287" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="AvO-xu-afe"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Description :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="105" translatesAutoresizingMaskIntoConstraints="NO" id="WDp-Jl-gUu">
+                                <rect key="frame" x="0.0" y="38" width="105" height="55"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="501" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-bl-c2y">
+                                <rect key="frame" x="113" y="38" width="287" height="84"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="KEl-4b-xKb"/>
+                                </connections>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sT-Wx-HCu" customClass="RateView">
+                                <rect key="frame" x="113" y="135" width="104" height="20"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="XwH-uz-Jqt"/>
+                                    <constraint firstAttribute="height" constant="20" id="eEv-nP-alj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvP-HW-a7I">
+                                <rect key="frame" x="300" y="163" width="100" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Z8R-b7-MtZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <state key="normal" title="Post" backgroundImage="gradient.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf0-Xt-gbk">
+                                <rect key="frame" x="0.0" y="130" width="105" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="14r-IB-NDG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m54-qg-nHb" firstAttribute="leading" secondItem="5Bg-bl-c2y" secondAttribute="leading" id="0xN-Pc-fnk"/>
+                            <constraint firstItem="nvP-HW-a7I" firstAttribute="top" secondItem="5Bg-bl-c2y" secondAttribute="bottom" constant="41" id="2vc-1W-r2t"/>
+                            <constraint firstItem="zpw-GF-hA1" firstAttribute="leading" secondItem="huB-yi-N27" secondAttribute="leading" id="5Cd-Os-LFy"/>
+                            <constraint firstItem="WDp-Jl-gUu" firstAttribute="top" secondItem="5Bg-bl-c2y" secondAttribute="top" id="5P4-zb-1yD"/>
+                            <constraint firstAttribute="bottom" secondItem="1sT-Wx-HCu" secondAttribute="bottom" constant="38" id="8Hw-T7-fEC"/>
+                            <constraint firstAttribute="trailing" secondItem="m54-qg-nHb" secondAttribute="trailing" id="8zr-GV-981"/>
+                            <constraint firstItem="zpw-GF-hA1" firstAttribute="top" secondItem="huB-yi-N27" secondAttribute="top" id="DW6-ot-mnn"/>
+                            <constraint firstItem="1sT-Wx-HCu" firstAttribute="centerY" secondItem="Bf0-Xt-gbk" secondAttribute="centerY" id="E58-ji-N3d"/>
+                            <constraint firstItem="1sT-Wx-HCu" firstAttribute="top" secondItem="5Bg-bl-c2y" secondAttribute="bottom" constant="13" id="JQ1-Qd-Sh4"/>
+                            <constraint firstItem="zpw-GF-hA1" firstAttribute="leading" secondItem="WDp-Jl-gUu" secondAttribute="leading" id="JlZ-fm-gFy"/>
+                            <constraint firstAttribute="bottom" secondItem="Bf0-Xt-gbk" secondAttribute="bottom" constant="33" id="LJV-oN-lQN"/>
+                            <constraint firstItem="m54-qg-nHb" firstAttribute="trailing" secondItem="5Bg-bl-c2y" secondAttribute="trailing" id="LWS-wf-kle"/>
+                            <constraint firstItem="m54-qg-nHb" firstAttribute="leading" secondItem="zpw-GF-hA1" secondAttribute="trailing" constant="8" symbolic="YES" id="QkJ-S7-4Cd"/>
+                            <constraint firstAttribute="bottom" secondItem="nvP-HW-a7I" secondAttribute="bottom" id="Tyt-Jp-wex"/>
+                            <constraint firstItem="5Bg-bl-c2y" firstAttribute="leading" secondItem="WDp-Jl-gUu" secondAttribute="trailing" constant="8" symbolic="YES" id="Vwy-hi-l1e"/>
+                            <constraint firstItem="5Bg-bl-c2y" firstAttribute="trailing" secondItem="nvP-HW-a7I" secondAttribute="trailing" id="bKe-42-7nL"/>
+                            <constraint firstItem="1sT-Wx-HCu" firstAttribute="leading" secondItem="5Bg-bl-c2y" secondAttribute="leading" id="cq2-kE-ajz"/>
+                            <constraint firstAttribute="width" constant="400" id="g18-VV-gKs"/>
+                            <constraint firstItem="zpw-GF-hA1" firstAttribute="top" secondItem="m54-qg-nHb" secondAttribute="top" id="jCw-z6-OcX"/>
+                            <constraint firstItem="5Bg-bl-c2y" firstAttribute="top" secondItem="m54-qg-nHb" secondAttribute="bottom" constant="8" symbolic="YES" id="lYd-Ub-FHs"/>
+                            <constraint firstItem="WDp-Jl-gUu" firstAttribute="leading" secondItem="Bf0-Xt-gbk" secondAttribute="leading" id="mey-mQ-BIf"/>
+                            <constraint firstItem="WDp-Jl-gUu" firstAttribute="top" secondItem="zpw-GF-hA1" secondAttribute="bottom" constant="8" symbolic="YES" id="tMd-Kn-Vb0"/>
+                            <constraint firstItem="1sT-Wx-HCu" firstAttribute="leading" secondItem="Bf0-Xt-gbk" secondAttribute="trailing" constant="8" symbolic="YES" id="vqO-sf-T2d"/>
+                            <constraint firstItem="Bf0-Xt-gbk" firstAttribute="top" secondItem="WDp-Jl-gUu" secondAttribute="bottom" constant="37" id="yLj-v0-5LG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="huB-yi-N27" firstAttribute="bottom" secondItem="vKh-a9-Zss" secondAttribute="bottomMargin" id="Ifh-8b-PHP"/>
+                    <constraint firstItem="huB-yi-N27" firstAttribute="top" secondItem="vKh-a9-Zss" secondAttribute="topMargin" id="Kn2-pa-7AM"/>
+                    <constraint firstItem="huB-yi-N27" firstAttribute="centerX" secondItem="vKh-a9-Zss" secondAttribute="centerX" id="VvC-tH-z7D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnSubmit" destination="nvP-HW-a7I" id="qra-2z-eiq"/>
+                <outlet property="rateView" destination="1sT-Wx-HCu" id="F5K-ZH-TGX"/>
+                <outlet property="txtReviewDesc" destination="5Bg-bl-c2y" id="L2t-DR-IFr"/>
+                <outlet property="txtReviewTitle" destination="m54-qg-nHb" id="iTS-DA-vqd"/>
+            </connections>
+            <point key="canvasLocation" x="435" y="474"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+    </resources>
+</document>

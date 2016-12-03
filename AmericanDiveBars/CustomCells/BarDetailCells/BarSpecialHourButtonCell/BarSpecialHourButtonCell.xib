@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BarSpecialHourButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0r-7x-uU1">
+                        <rect key="frame" x="0.0" y="50" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mTs-dT-KoV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHL-np-EsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="foT-Pw-0BL">
+                        <rect key="frame" x="40" y="6" width="240" height="39"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="eBp-4W-giQ"/>
+                            <constraint firstAttribute="height" constant="39" id="yfo-Ld-6ty"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                        <state key="normal" title="Happy Hours &amp; Special" backgroundImage="gradient.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="y0r-7x-uU1" secondAttribute="trailing" id="APv-Ga-Q1J"/>
+                    <constraint firstItem="bHL-np-EsS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fbb-Dg-bLm"/>
+                    <constraint firstItem="y0r-7x-uU1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Nc9-23-d6H"/>
+                    <constraint firstItem="y0r-7x-uU1" firstAttribute="top" secondItem="foT-Pw-0BL" secondAttribute="bottom" constant="5" id="RPZ-fi-zza"/>
+                    <constraint firstItem="foT-Pw-0BL" firstAttribute="top" secondItem="bHL-np-EsS" secondAttribute="bottom" constant="5" id="dJR-T7-o0w"/>
+                    <constraint firstItem="bHL-np-EsS" firstAttribute="leading" secondItem="y0r-7x-uU1" secondAttribute="leading" id="eOl-UQ-LB3"/>
+                    <constraint firstItem="foT-Pw-0BL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="keO-5w-40j"/>
+                    <constraint firstItem="foT-Pw-0BL" firstAttribute="centerX" secondItem="y0r-7x-uU1" secondAttribute="centerX" id="lfS-2o-NVx"/>
+                    <constraint firstItem="bHL-np-EsS" firstAttribute="trailing" secondItem="y0r-7x-uU1" secondAttribute="trailing" id="sJD-BI-3mA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSpecialHours" destination="foT-Pw-0BL" id="jDh-95-Nvw"/>
+            </connections>
+            <point key="canvasLocation" x="344" y="359"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+    </resources>
+</document>

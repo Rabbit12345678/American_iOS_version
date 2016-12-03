@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="uX4-Si-SIW" customClass="DirectoryLeaveCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uX4-Si-SIW" id="aOn-TL-wnE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" tag="601" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tell us what you think!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W9Y-sE-NY4">
+                        <rect key="frame" x="8" y="8" width="304" height="30"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="mAo-3K-cKC"/>
+                        </connections>
+                    </textField>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="501" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wcC-dE-b6d">
+                        <rect key="frame" x="8" y="46" width="304" height="84"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="q18-mV-Wq9"/>
+                        </connections>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZD-nX-lPm">
+                        <rect key="frame" x="110" y="138" width="100" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3MJ-uc-pTy"/>
+                            <constraint firstAttribute="width" constant="100" id="Dc0-aI-TYF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                        <state key="normal" title="Post" backgroundImage="gradient.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="W9Y-sE-NY4" firstAttribute="top" secondItem="aOn-TL-wnE" secondAttribute="topMargin" id="2KM-OU-cFP"/>
+                    <constraint firstItem="W9Y-sE-NY4" firstAttribute="trailing" secondItem="wcC-dE-b6d" secondAttribute="trailing" id="HEq-P9-58c"/>
+                    <constraint firstItem="W9Y-sE-NY4" firstAttribute="trailing" secondItem="aOn-TL-wnE" secondAttribute="trailingMargin" id="RJU-Hj-oYM"/>
+                    <constraint firstItem="W9Y-sE-NY4" firstAttribute="leading" secondItem="aOn-TL-wnE" secondAttribute="leadingMargin" id="STt-HU-aZo"/>
+                    <constraint firstItem="wcC-dE-b6d" firstAttribute="top" secondItem="W9Y-sE-NY4" secondAttribute="bottom" constant="8" symbolic="YES" id="T3O-Bx-GaH"/>
+                    <constraint firstItem="wcC-dE-b6d" firstAttribute="centerY" secondItem="aOn-TL-wnE" secondAttribute="centerY" id="YDO-TY-H7m"/>
+                    <constraint firstItem="oZD-nX-lPm" firstAttribute="top" secondItem="wcC-dE-b6d" secondAttribute="bottom" constant="8" symbolic="YES" id="aor-lR-RoH"/>
+                    <constraint firstItem="W9Y-sE-NY4" firstAttribute="leading" secondItem="wcC-dE-b6d" secondAttribute="leading" id="nWh-Ak-GZe"/>
+                    <constraint firstItem="oZD-nX-lPm" firstAttribute="centerX" secondItem="aOn-TL-wnE" secondAttribute="centerX" id="pMa-s4-aGv"/>
+                    <constraint firstItem="oZD-nX-lPm" firstAttribute="bottom" secondItem="aOn-TL-wnE" secondAttribute="bottomMargin" id="peY-bg-zkB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnSubmit" destination="oZD-nX-lPm" id="BEL-Vr-hzS"/>
+                <outlet property="txtComment" destination="wcC-dE-b6d" id="rC3-cU-Xt1"/>
+                <outlet property="txtCommentTitle" destination="W9Y-sE-NY4" id="KD8-JJ-UaT"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="197.5"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="Muo-3g-fbc" customClass="DirectoryLeaveCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Muo-3g-fbc" id="WfH-sO-jbv">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZk-8V-3h2">
+                        <rect key="frame" x="184" y="8" width="400" height="160"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="601" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tell us what you think!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X86-8y-GS0">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="Omk-vT-Alw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-LJ-HWX">
+                                <rect key="frame" x="150" y="130" width="100" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2ey-yt-eyD"/>
+                                    <constraint firstAttribute="width" constant="100" id="ke3-7N-iFd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <state key="normal" title="Post" backgroundImage="gradient.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="501" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OEh-MA-1LG">
+                                <rect key="frame" x="0.0" y="38" width="400" height="84"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="gbm-ih-zrz"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="400" id="BeU-Gv-J9z"/>
+                            <constraint firstItem="OEh-MA-1LG" firstAttribute="centerY" secondItem="DZk-8V-3h2" secondAttribute="centerY" id="DQh-IY-TqH"/>
+                            <constraint firstItem="FPl-LJ-HWX" firstAttribute="top" secondItem="OEh-MA-1LG" secondAttribute="bottom" constant="8" symbolic="YES" id="IRn-gK-fas"/>
+                            <constraint firstItem="X86-8y-GS0" firstAttribute="leading" secondItem="DZk-8V-3h2" secondAttribute="leading" id="NT6-0r-Dye"/>
+                            <constraint firstItem="X86-8y-GS0" firstAttribute="top" secondItem="DZk-8V-3h2" secondAttribute="top" id="Ofw-5H-T7y"/>
+                            <constraint firstItem="X86-8y-GS0" firstAttribute="trailing" secondItem="OEh-MA-1LG" secondAttribute="trailing" id="WQq-dt-K05"/>
+                            <constraint firstItem="FPl-LJ-HWX" firstAttribute="centerX" secondItem="DZk-8V-3h2" secondAttribute="centerX" id="Zek-jL-uRL"/>
+                            <constraint firstAttribute="bottom" secondItem="FPl-LJ-HWX" secondAttribute="bottom" id="k2v-qu-eaj"/>
+                            <constraint firstItem="OEh-MA-1LG" firstAttribute="top" secondItem="X86-8y-GS0" secondAttribute="bottom" constant="8" symbolic="YES" id="mW3-0e-5dB"/>
+                            <constraint firstAttribute="trailing" secondItem="X86-8y-GS0" secondAttribute="trailing" id="rFL-iz-CZH"/>
+                            <constraint firstItem="X86-8y-GS0" firstAttribute="leading" secondItem="OEh-MA-1LG" secondAttribute="leading" id="zwI-St-BIa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="DZk-8V-3h2" firstAttribute="centerX" secondItem="WfH-sO-jbv" secondAttribute="centerX" id="IpQ-EY-cY8"/>
+                    <constraint firstItem="DZk-8V-3h2" firstAttribute="bottom" secondItem="WfH-sO-jbv" secondAttribute="bottomMargin" id="Ky3-xC-zMx"/>
+                    <constraint firstItem="DZk-8V-3h2" firstAttribute="top" secondItem="WfH-sO-jbv" secondAttribute="topMargin" id="OXM-oO-HYK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnSubmit" destination="FPl-LJ-HWX" id="VBm-6m-DS4"/>
+                <outlet property="txtComment" destination="OEh-MA-1LG" id="hA2-6w-98K"/>
+                <outlet property="txtCommentTitle" destination="X86-8y-GS0" id="VBf-do-r8Y"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="478.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+    </resources>
+</document>

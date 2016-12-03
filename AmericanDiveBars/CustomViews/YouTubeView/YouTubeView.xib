@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WVW-ib-40I" customClass="YouTubeView">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" fixedFrame="YES" mediaPlaybackRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLs-FI-8Uv">
+                    <rect key="frame" x="0.0" y="0.0" width="304" height="160"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="15p-ig-o2A" appends="YES" id="zFS-F4-lQS"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="0.1803921568627451" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="webView" destination="cLs-FI-8Uv" id="e9w-WQ-vZ9"/>
+                <outletCollection property="gestureRecognizers" destination="15p-ig-o2A" appends="YES" id="DRi-9J-IYL"/>
+            </connections>
+            <point key="canvasLocation" x="288" y="190"/>
+        </view>
+        <tapGestureRecognizer id="15p-ig-o2A">
+            <connections>
+                <action selector="playYouTubeVideo:" destination="WVW-ib-40I" id="Gpd-Z6-UCH"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

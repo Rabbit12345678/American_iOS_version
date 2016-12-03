@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarSpecialHoursCell" rowHeight="363" id="Pgn-5H-wV0" customClass="BarSpecialHoursCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="363"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pgn-5H-wV0" id="Tqv-sT-ZDt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="362"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukg-IF-ujv">
+                        <rect key="frame" x="8" y="361" width="304" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.2274509804" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qdo-VZ-LaH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WednesDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnS-Nl-W82">
+                        <rect key="frame" x="8" y="8" width="100" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImJ-fK-KKg">
+                        <rect key="frame" x="8" y="39" width="137" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="137" id="0dv-4U-lFX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99 AM - 99:99 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDe-sL-Nad">
+                        <rect key="frame" x="127" y="8" width="185" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3g-CH-gMz">
+                        <rect key="frame" x="146" y="39" width="166" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbd-8H-sag">
+                        <rect key="frame" x="8" y="68" width="56" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="hGZ-CH-MoI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-yi-7ma">
+                        <rect key="frame" x="65" y="68" width="247" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGQ-Re-ZWr">
+                        <rect key="frame" x="8" y="105" width="137" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGR-LB-43g">
+                        <rect key="frame" x="146" y="105" width="166" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz8-5m-1KP">
+                        <rect key="frame" x="8" y="134" width="56" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX7-kQ-xiH">
+                        <rect key="frame" x="65" y="134" width="247" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cx-d1-zg2">
+                        <rect key="frame" x="8" y="171" width="137" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coE-9e-UZC">
+                        <rect key="frame" x="146" y="171" width="166" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5F-St-Uwo">
+                        <rect key="frame" x="8" y="200" width="56" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDA-dZ-Q47">
+                        <rect key="frame" x="65" y="200" width="247" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI0-oM-6xH">
+                        <rect key="frame" x="8" y="237" width="137" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atz-Vg-FxG">
+                        <rect key="frame" x="146" y="237" width="166" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-w4-3sS">
+                        <rect key="frame" x="8" y="266" width="56" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZT-fz-vgZ">
+                        <rect key="frame" x="65" y="266" width="247" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2P-vN-lDa">
+                        <rect key="frame" x="8" y="303" width="137" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-5v-XXY">
+                        <rect key="frame" x="146" y="303" width="166" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd1-vN-grK">
+                        <rect key="frame" x="8" y="332" width="56" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H...OppenHaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsR-S7-Ucc">
+                        <rect key="frame" x="65" y="332" width="247" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="l3g-CH-gMz" firstAttribute="leading" secondItem="ImJ-fK-KKg" secondAttribute="trailing" constant="1" id="08o-a3-YTQ"/>
+                    <constraint firstItem="Xck-w4-3sS" firstAttribute="leading" secondItem="a2P-vN-lDa" secondAttribute="leading" id="157-af-GVr"/>
+                    <constraint firstItem="a2P-vN-lDa" firstAttribute="leading" secondItem="Pd1-vN-grK" secondAttribute="leading" id="18d-ua-ffA"/>
+                    <constraint firstItem="iI0-oM-6xH" firstAttribute="top" secondItem="i5F-St-Uwo" secondAttribute="bottom" constant="16" id="1It-PE-WpG"/>
+                    <constraint firstItem="Ukg-IF-ujv" firstAttribute="trailing" secondItem="VsR-S7-Ucc" secondAttribute="trailing" id="2eo-3e-XOG"/>
+                    <constraint firstItem="3Cx-d1-zg2" firstAttribute="baseline" secondItem="coE-9e-UZC" secondAttribute="baseline" id="3nJ-AX-DOT"/>
+                    <constraint firstItem="OnS-Nl-W82" firstAttribute="top" secondItem="Tqv-sT-ZDt" secondAttribute="topMargin" id="3og-R0-4ur"/>
+                    <constraint firstItem="BGQ-Re-ZWr" firstAttribute="top" secondItem="Mbd-8H-sag" secondAttribute="bottom" constant="16" id="4t7-KP-TIi"/>
+                    <constraint firstItem="Pd1-vN-grK" firstAttribute="leading" secondItem="Ukg-IF-ujv" secondAttribute="leading" id="54l-iB-Iff"/>
+                    <constraint firstItem="Xfg-5v-XXY" firstAttribute="trailing" secondItem="zZT-fz-vgZ" secondAttribute="trailing" id="5hb-Tx-p2K"/>
+                    <constraint firstItem="vDA-dZ-Q47" firstAttribute="leading" secondItem="zZT-fz-vgZ" secondAttribute="leading" id="747-FS-qWa"/>
+                    <constraint firstItem="coE-9e-UZC" firstAttribute="trailing" secondItem="XX7-kQ-xiH" secondAttribute="trailing" id="8Mf-QP-LIi"/>
+                    <constraint firstItem="ImJ-fK-KKg" firstAttribute="top" secondItem="OnS-Nl-W82" secondAttribute="bottom" constant="10" id="8Sr-c8-Fw8"/>
+                    <constraint firstItem="vGR-LB-43g" firstAttribute="leading" secondItem="l3g-CH-gMz" secondAttribute="leading" id="8h4-j7-Pth"/>
+                    <constraint firstItem="ImJ-fK-KKg" firstAttribute="baseline" secondItem="l3g-CH-gMz" secondAttribute="baseline" id="8j4-Bn-u3p"/>
+                    <constraint firstItem="VsR-S7-Ucc" firstAttribute="centerY" secondItem="Pd1-vN-grK" secondAttribute="centerY" id="8tC-5c-RGq"/>
+                    <constraint firstItem="iI0-oM-6xH" firstAttribute="leading" secondItem="Xck-w4-3sS" secondAttribute="leading" id="A1n-hT-3Sd"/>
+                    <constraint firstItem="atz-Vg-FxG" firstAttribute="leading" secondItem="coE-9e-UZC" secondAttribute="leading" id="BnC-gt-ama"/>
+                    <constraint firstItem="atz-Vg-FxG" firstAttribute="centerY" secondItem="iI0-oM-6xH" secondAttribute="centerY" id="DDe-Lg-k6H"/>
+                    <constraint firstItem="rz8-5m-1KP" firstAttribute="trailing" secondItem="i5F-St-Uwo" secondAttribute="trailing" id="Ibm-NT-lie"/>
+                    <constraint firstItem="l3g-CH-gMz" firstAttribute="trailing" secondItem="cDe-sL-Nad" secondAttribute="trailing" id="IlZ-Gu-9nq"/>
+                    <constraint firstItem="coE-9e-UZC" firstAttribute="trailing" secondItem="vDA-dZ-Q47" secondAttribute="trailing" id="Nhn-AI-xHt"/>
+                    <constraint firstItem="vDA-dZ-Q47" firstAttribute="baseline" secondItem="i5F-St-Uwo" secondAttribute="baseline" id="OKJ-Xp-Skg"/>
+                    <constraint firstItem="Mbd-8H-sag" firstAttribute="leading" secondItem="ImJ-fK-KKg" secondAttribute="leading" id="QBj-7U-y52"/>
+                    <constraint firstItem="3Cx-d1-zg2" firstAttribute="centerY" secondItem="Tqv-sT-ZDt" secondAttribute="centerY" id="R08-Kx-rUg"/>
+                    <constraint firstItem="coE-9e-UZC" firstAttribute="leading" secondItem="vGR-LB-43g" secondAttribute="leading" id="R6m-Lp-Pia"/>
+                    <constraint firstItem="OnS-Nl-W82" firstAttribute="leading" secondItem="ImJ-fK-KKg" secondAttribute="leading" id="RD6-nS-QLD"/>
+                    <constraint firstItem="a2P-vN-lDa" firstAttribute="top" secondItem="Xck-w4-3sS" secondAttribute="bottom" constant="16" id="RFv-0E-bk3"/>
+                    <constraint firstItem="Mbd-8H-sag" firstAttribute="leading" secondItem="BGQ-Re-ZWr" secondAttribute="leading" id="RdT-Qv-7Ct"/>
+                    <constraint firstItem="Xfg-5v-XXY" firstAttribute="trailing" secondItem="VsR-S7-Ucc" secondAttribute="trailing" id="TCz-i6-lLw"/>
+                    <constraint firstItem="zZT-fz-vgZ" firstAttribute="baseline" secondItem="Xck-w4-3sS" secondAttribute="baseline" id="TQV-a9-OFr"/>
+                    <constraint firstItem="i5F-St-Uwo" firstAttribute="leading" secondItem="iI0-oM-6xH" secondAttribute="leading" id="TpB-aO-aS0"/>
+                    <constraint firstItem="i5F-St-Uwo" firstAttribute="top" secondItem="3Cx-d1-zg2" secondAttribute="bottom" constant="8" symbolic="YES" id="USn-uS-DFG"/>
+                    <constraint firstItem="Xfg-5v-XXY" firstAttribute="baseline" secondItem="a2P-vN-lDa" secondAttribute="baseline" id="Ud4-bg-uAg"/>
+                    <constraint firstItem="Xfg-5v-XXY" firstAttribute="centerY" secondItem="a2P-vN-lDa" secondAttribute="centerY" id="VDD-f4-b9Y"/>
+                    <constraint firstItem="vGR-LB-43g" firstAttribute="baseline" secondItem="BGQ-Re-ZWr" secondAttribute="baseline" id="W4x-fm-rlo"/>
+                    <constraint firstItem="rz8-5m-1KP" firstAttribute="top" secondItem="BGQ-Re-ZWr" secondAttribute="bottom" constant="8" symbolic="YES" id="WQy-cS-1np"/>
+                    <constraint firstItem="XX7-kQ-xiH" firstAttribute="baseline" secondItem="rz8-5m-1KP" secondAttribute="baseline" id="WpP-wY-A0Y"/>
+                    <constraint firstItem="l3g-CH-gMz" firstAttribute="trailing" secondItem="OBZ-yi-7ma" secondAttribute="trailing" id="Zc2-9C-FRX"/>
+                    <constraint firstItem="OBZ-yi-7ma" firstAttribute="baseline" secondItem="Mbd-8H-sag" secondAttribute="baseline" id="Ze0-dy-7T6"/>
+                    <constraint firstItem="zZT-fz-vgZ" firstAttribute="trailing" secondItem="atz-Vg-FxG" secondAttribute="trailing" id="Zl9-Q4-3NF"/>
+                    <constraint firstItem="Xck-w4-3sS" firstAttribute="top" secondItem="iI0-oM-6xH" secondAttribute="bottom" constant="8" symbolic="YES" id="aCW-h5-Wed"/>
+                    <constraint firstItem="i5F-St-Uwo" firstAttribute="leading" secondItem="3Cx-d1-zg2" secondAttribute="leading" id="aPk-4l-Bef"/>
+                    <constraint firstItem="cDe-sL-Nad" firstAttribute="baseline" secondItem="OnS-Nl-W82" secondAttribute="baseline" id="cvG-K4-m2m"/>
+                    <constraint firstItem="BGQ-Re-ZWr" firstAttribute="leading" secondItem="rz8-5m-1KP" secondAttribute="leading" id="d1e-nY-pkc"/>
+                    <constraint firstItem="rz8-5m-1KP" firstAttribute="leading" secondItem="3Cx-d1-zg2" secondAttribute="leading" id="dBr-Y7-Xj2"/>
+                    <constraint firstItem="OBZ-yi-7ma" firstAttribute="leading" secondItem="XX7-kQ-xiH" secondAttribute="leading" id="djv-KC-bKG"/>
+                    <constraint firstItem="Mbd-8H-sag" firstAttribute="top" secondItem="ImJ-fK-KKg" secondAttribute="bottom" constant="8" symbolic="YES" id="fqq-xG-4F3"/>
+                    <constraint firstItem="zZT-fz-vgZ" firstAttribute="centerY" secondItem="Xck-w4-3sS" secondAttribute="centerY" id="hKN-OH-g9U"/>
+                    <constraint firstItem="Pd1-vN-grK" firstAttribute="top" secondItem="a2P-vN-lDa" secondAttribute="bottom" constant="8" symbolic="YES" id="hgf-Pi-giz"/>
+                    <constraint firstItem="vDA-dZ-Q47" firstAttribute="leading" secondItem="XX7-kQ-xiH" secondAttribute="leading" id="iFQ-3z-fMa"/>
+                    <constraint firstItem="i5F-St-Uwo" firstAttribute="trailing" secondItem="Xck-w4-3sS" secondAttribute="trailing" id="jYP-fN-kYG"/>
+                    <constraint firstItem="OBZ-yi-7ma" firstAttribute="trailing" secondItem="vGR-LB-43g" secondAttribute="trailing" id="mbU-V5-73V"/>
+                    <constraint firstItem="Mbd-8H-sag" firstAttribute="trailing" secondItem="rz8-5m-1KP" secondAttribute="trailing" id="mf7-9D-Pfs"/>
+                    <constraint firstItem="Mbd-8H-sag" firstAttribute="leading" secondItem="Tqv-sT-ZDt" secondAttribute="leadingMargin" id="nSw-Ig-nRM"/>
+                    <constraint firstItem="atz-Vg-FxG" firstAttribute="baseline" secondItem="iI0-oM-6xH" secondAttribute="baseline" id="ojx-qD-V6y"/>
+                    <constraint firstItem="zZT-fz-vgZ" firstAttribute="leading" secondItem="VsR-S7-Ucc" secondAttribute="leading" id="pcU-zg-34E"/>
+                    <constraint firstItem="Xck-w4-3sS" firstAttribute="trailing" secondItem="Pd1-vN-grK" secondAttribute="trailing" id="qb5-rn-C2R"/>
+                    <constraint firstItem="vDA-dZ-Q47" firstAttribute="centerY" secondItem="i5F-St-Uwo" secondAttribute="centerY" id="rl9-Ux-3CU"/>
+                    <constraint firstItem="Xfg-5v-XXY" firstAttribute="trailing" secondItem="Tqv-sT-ZDt" secondAttribute="trailingMargin" id="t5L-Yc-nHd"/>
+                    <constraint firstItem="XX7-kQ-xiH" firstAttribute="trailing" secondItem="vGR-LB-43g" secondAttribute="trailing" id="tdm-jQ-eSx"/>
+                    <constraint firstItem="atz-Vg-FxG" firstAttribute="leading" secondItem="Xfg-5v-XXY" secondAttribute="leading" id="tkf-Sm-8IZ"/>
+                    <constraint firstItem="OBZ-yi-7ma" firstAttribute="leading" secondItem="Mbd-8H-sag" secondAttribute="trailing" constant="1" id="uLh-2J-t8D"/>
+                    <constraint firstItem="vDA-dZ-Q47" firstAttribute="trailing" secondItem="atz-Vg-FxG" secondAttribute="trailing" id="w22-T4-sqY"/>
+                    <constraint firstItem="Ukg-IF-ujv" firstAttribute="top" secondItem="Pd1-vN-grK" secondAttribute="bottom" constant="8" symbolic="YES" id="xXD-Ae-6IQ"/>
+                    <constraint firstItem="Pd1-vN-grK" firstAttribute="baseline" secondItem="VsR-S7-Ucc" secondAttribute="baseline" id="ygB-hY-N5A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="0.30588235289999999" green="0.2901960784" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="lblDay" destination="OnS-Nl-W82" id="ozo-dH-Zr3"/>
+                <outlet property="lblDuration" destination="cDe-sL-Nad" id="YPL-7j-2zS"/>
+                <outlet property="lblName0" destination="ImJ-fK-KKg" id="0gX-q1-a8E"/>
+                <outlet property="lblName1" destination="BGQ-Re-ZWr" id="041-Xy-a7a"/>
+                <outlet property="lblName2" destination="3Cx-d1-zg2" id="VHc-3L-atk"/>
+                <outlet property="lblName3" destination="iI0-oM-6xH" id="XsN-Ww-6cC"/>
+                <outlet property="lblName4" destination="a2P-vN-lDa" id="MGU-ln-WUU"/>
+                <outlet property="lblNameValue0" destination="l3g-CH-gMz" id="jGc-R6-LGf"/>
+                <outlet property="lblNameValue1" destination="vGR-LB-43g" id="cre-Qg-x8k"/>
+                <outlet property="lblNameValue2" destination="coE-9e-UZC" id="ysr-fx-zdB"/>
+                <outlet property="lblNameValue3" destination="atz-Vg-FxG" id="GXv-oM-OZt"/>
+                <outlet property="lblNameValue4" destination="Xfg-5v-XXY" id="iyQ-EV-sns"/>
+                <outlet property="lblPrice0" destination="OBZ-yi-7ma" id="qGt-qS-wkf"/>
+                <outlet property="lblPrice1" destination="XX7-kQ-xiH" id="J8L-xt-ivZ"/>
+                <outlet property="lblPrice2" destination="vDA-dZ-Q47" id="tAB-II-zv5"/>
+                <outlet property="lblPrice3" destination="zZT-fz-vgZ" id="iqx-2S-Ciu"/>
+                <outlet property="lblPrice4" destination="VsR-S7-Ucc" id="bb2-ro-p33"/>
+            </connections>
+            <point key="canvasLocation" x="381" y="1597"/>
+        </tableViewCell>
+    </objects>
+</document>

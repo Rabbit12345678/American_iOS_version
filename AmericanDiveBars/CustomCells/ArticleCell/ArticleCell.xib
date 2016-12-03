@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" id="djF-Oa-c6N" customClass="ArticleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="djF-Oa-c6N" id="Nc3-yr-WI5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOP-xb-Rzd">
+                        <rect key="frame" x="8" y="8" width="304" height="103"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="164" placeholderIntrinsicHeight="25" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="172" translatesAutoresizingMaskIntoConstraints="NO" id="Vzt-gG-SeZ" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="111" y="49" width="164" height="25"/>
+                        <animations/>
+                        <string key="text">Lorem  ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda EOL TITLE</string>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb5-SU-h1V">
+                        <rect key="frame" x="279" y="47" width="25" height="25"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="wvd-MT-sm4"/>
+                        </constraints>
+                        <state key="normal" image="navigate-arrow.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="164" placeholderIntrinsicHeight="25" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="172" translatesAutoresizingMaskIntoConstraints="NO" id="qnn-Xo-Tge" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="111" y="16" width="164" height="25"/>
+                        <animations/>
+                        <string key="text">Lorem  ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda EOL TITLE</string>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-article.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cpa-ya-Liy">
+                        <rect key="frame" x="16" y="16" width="87" height="87"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="87" id="hRT-7y-abp"/>
+                            <constraint firstAttribute="height" constant="87" id="jok-9f-hmS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="YOP-xb-Rzd" firstAttribute="bottom" secondItem="Nc3-yr-WI5" secondAttribute="bottomMargin" id="4oo-Tl-qGk"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Cpa-ya-Liy" secondAttribute="bottom" constant="16" id="4qA-cr-zhk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rb5-SU-h1V" secondAttribute="trailing" constant="8" id="5XM-t2-SpA"/>
+                    <constraint firstItem="Cpa-ya-Liy" firstAttribute="top" secondItem="Nc3-yr-WI5" secondAttribute="topMargin" constant="8" id="7Al-BZ-SN6"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vzt-gG-SeZ" secondAttribute="bottom" constant="45" id="Bit-Zp-h2l"/>
+                    <constraint firstItem="YOP-xb-Rzd" firstAttribute="trailing" secondItem="Nc3-yr-WI5" secondAttribute="trailingMargin" id="Ger-wR-I3M"/>
+                    <constraint firstItem="YOP-xb-Rzd" firstAttribute="top" secondItem="Nc3-yr-WI5" secondAttribute="topMargin" id="IAb-pU-cD8"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qnn-Xo-Tge" secondAttribute="bottom" constant="78" id="JU0-x2-RMl"/>
+                    <constraint firstItem="YOP-xb-Rzd" firstAttribute="leading" secondItem="Nc3-yr-WI5" secondAttribute="leadingMargin" id="JhG-hS-oaH"/>
+                    <constraint firstItem="Vzt-gG-SeZ" firstAttribute="top" secondItem="qnn-Xo-Tge" secondAttribute="bottom" constant="8" symbolic="YES" id="O5r-jp-2V1"/>
+                    <constraint firstItem="Cpa-ya-Liy" firstAttribute="leading" secondItem="Nc3-yr-WI5" secondAttribute="leadingMargin" constant="8" id="PTB-NI-gXJ"/>
+                    <constraint firstItem="qnn-Xo-Tge" firstAttribute="leading" secondItem="Vzt-gG-SeZ" secondAttribute="leading" id="Qna-BO-38k"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qnn-Xo-Tge" secondAttribute="trailing" constant="37" id="Sk1-Es-yqh"/>
+                    <constraint firstItem="qnn-Xo-Tge" firstAttribute="leading" secondItem="Cpa-ya-Liy" secondAttribute="trailing" constant="8" symbolic="YES" id="e9a-z6-dpM"/>
+                    <constraint firstItem="qnn-Xo-Tge" firstAttribute="top" secondItem="Cpa-ya-Liy" secondAttribute="top" id="tWF-vp-2Rm"/>
+                    <constraint firstItem="rb5-SU-h1V" firstAttribute="centerY" secondItem="Nc3-yr-WI5" secondAttribute="centerY" id="vpD-fO-sfh"/>
+                    <constraint firstItem="rb5-SU-h1V" firstAttribute="top" secondItem="Nc3-yr-WI5" secondAttribute="topMargin" constant="39" id="xb7-ac-Oez"/>
+                    <constraint firstItem="rb5-SU-h1V" firstAttribute="leading" secondItem="Vzt-gG-SeZ" secondAttribute="trailing" constant="4" id="zkU-g6-O9k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="imgArticle" destination="Cpa-ya-Liy" id="VTj-MZ-lte"/>
+                <outlet property="lblArticle" destination="Vzt-gG-SeZ" id="2If-y4-Uw8"/>
+                <outlet property="lblBg" destination="YOP-xb-Rzd" id="B2G-hO-1Do"/>
+                <outlet property="lblTitle" destination="qnn-Xo-Tge" id="cpm-9I-mTx"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="256"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="navigate-arrow.png" width="20" height="20"/>
+        <image name="no-article.png" width="128" height="128"/>
+    </resources>
+</document>

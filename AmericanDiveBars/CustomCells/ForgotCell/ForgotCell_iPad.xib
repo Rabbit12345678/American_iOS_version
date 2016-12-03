@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForgotCell" rowHeight="247" id="pXT-WE-9bH" userLabel="ForgotCell" customClass="ForgotCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pXT-WE-9bH" id="fPQ-xr-YQL">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCh-fh-rZF">
+                        <rect key="frame" x="184" y="58" width="400" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="400" id="7EU-fF-Pmk"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                    </textField>
+                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbz-Wn-EPY">
+                        <rect key="frame" x="184" y="108" width="400" height="50"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NqC-Sm-6yj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                        <state key="normal" title="SEND">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZg-Em-jHc">
+                        <rect key="frame" x="184" y="188" width="400" height="50"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="d4L-lv-XOX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                        <state key="normal" title="GO BACK">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Dbz-Wn-EPY" firstAttribute="trailing" secondItem="VCh-fh-rZF" secondAttribute="trailing" id="1hj-eB-o4u"/>
+                    <constraint firstItem="mZg-Em-jHc" firstAttribute="top" secondItem="Dbz-Wn-EPY" secondAttribute="bottom" constant="30" id="Ez9-Kk-0XH"/>
+                    <constraint firstItem="Dbz-Wn-EPY" firstAttribute="centerX" secondItem="fPQ-xr-YQL" secondAttribute="centerX" id="GgR-om-Mof"/>
+                    <constraint firstItem="Dbz-Wn-EPY" firstAttribute="top" secondItem="VCh-fh-rZF" secondAttribute="bottom" id="Ir4-q0-sn1"/>
+                    <constraint firstItem="Dbz-Wn-EPY" firstAttribute="trailing" secondItem="mZg-Em-jHc" secondAttribute="trailing" id="LfF-fK-kAs"/>
+                    <constraint firstItem="Dbz-Wn-EPY" firstAttribute="leading" secondItem="VCh-fh-rZF" secondAttribute="leading" id="ZJG-jd-PLc"/>
+                    <constraint firstItem="VCh-fh-rZF" firstAttribute="top" secondItem="fPQ-xr-YQL" secondAttribute="topMargin" constant="50" id="aQq-gO-0ja"/>
+                    <constraint firstItem="mZg-Em-jHc" firstAttribute="bottom" secondItem="fPQ-xr-YQL" secondAttribute="bottomMargin" id="lgV-Df-PdD"/>
+                    <constraint firstItem="mZg-Em-jHc" firstAttribute="leading" secondItem="Dbz-Wn-EPY" secondAttribute="leading" id="wVG-9U-28Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnBack" destination="mZg-Em-jHc" id="YLQ-49-gLO"/>
+                <outlet property="btnSend" destination="Dbz-Wn-EPY" id="C3C-K0-rHX"/>
+                <outlet property="txtEmail" destination="VCh-fh-rZF" id="QaY-Zu-i3k"/>
+            </connections>
+            <point key="canvasLocation" x="485" y="281.5"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
